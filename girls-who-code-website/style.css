@@ -1,0 +1,74 @@
+.topBarContainer {
+    background-color: skyblue;
+    height: 80px;
+    padding: 0;
+    position:absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.sideBarContainer {
+    background-color: burlywood;
+    position: absolute;
+    position: fixed;
+    left: 0; 
+    top: 80px;
+    bottom: 0;
+    width: 180px;
+}
+
+.mainContent {
+    position: absolute;
+    top: 80px;
+    left: 180px;
+    right: 0;
+    bottom: 0;
+    
+}
+
+.image1Div {
+    align-content: center;
+
+}              
+
+.imageContainer {
+    
+    
+}
+
+.imageSubcontainer {
+    background-color: gainsboro;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.image {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+}
+
+.textContainer{
+    background-color: darkgray;
+    border-radius: 5px;
+    
+}
+
+.boldText {
+    margin: 5px;
+    padding-bottom: 0px;
+    font-family: sans-serif;
+    
+}
+
+.mainText {
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin: 30px;
+    font-family: sans-serif;
+    
+}
