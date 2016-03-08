@@ -1,11 +1,11 @@
 function sideBarButtonSA (button){
-    console.log("gdahsuashf");
+    window.open("info-SouthAmerica.html");
 }
 
 function sideBarButtonI (button){
-    console.log("gdahsuashf");
+    window.open("info-Inka.html");
 }
 
 function sideBarButtonNA (button){
-    console.log("gdahsuashf");
+    window.open("info-NorthAmerica.html");
 }
