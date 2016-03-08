@@ -1,3 +1,4 @@
 function testButton (button){
-    console.log("gdahsuashf")
+    console.log("gdahsuashf");
+    alert ("fdfadf");
 }
