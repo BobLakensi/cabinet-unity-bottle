@@ -9,6 +9,15 @@
     right: 0;
 }
 
+.topBarSubContainer {
+    padding: 5px;
+    margin: 5px;
+}
+
+.button {
+
+}
+
 .sideBarContainer {
     background-color: burlywood;
     position: absolute;
@@ -71,4 +80,10 @@
     margin: 30px;
     font-family: sans-serif;
     
+}
+
+.footerSubContainer {
+    align-content: center;
+    width: 20em;
+    position: absolute;
 }
