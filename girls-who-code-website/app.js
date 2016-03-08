@@ -3,7 +3,7 @@ function sideBarButtonSA (button){
 }
 
 function sideBarButtonI (button){
-    window.open("info-Inka.html");
+    window.open("info-Inkas.html");
 }
 
 function sideBarButtonNA (button){
