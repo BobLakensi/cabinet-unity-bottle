@@ -37,11 +37,17 @@
     padding: 2px;
 }
 
+.sideBarButtonSubContainer {
+    padding: 2px;
+    margin: 2px;
+}
+
 .buttonSideBar {
     height: 50px;
     width: 100%;
     border-radius: 10px;
 }
+
 
 .mainContent {
     position: absolute;
