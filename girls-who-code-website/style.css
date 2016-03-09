@@ -82,6 +82,13 @@
     width: 20em;
 }
 
+.imageInfo {
+    padding: 5px;
+    margin: 5px;
+    align-content: center;
+
+}
+
 .textContainer{
     background-color: darkgray;
     border-radius: 5px;
