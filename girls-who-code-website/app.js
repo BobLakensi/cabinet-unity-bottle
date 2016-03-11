@@ -1,11 +1,11 @@
 function sideBarButtonSA (button){
-    window.open("info-SouthAmerica.html");
+    location.href = "info-SouthAmerica.html";
 }
 
 function sideBarButtonI (button){
-    window.open("info-Inkas.html");
+    location.href = "info-Inkas.html";
 }
 
 function sideBarButtonNA (button){
-    window.open("info-NorthAmerica.html");
+    location.href = "info-NorthAmerica.html";
 }
