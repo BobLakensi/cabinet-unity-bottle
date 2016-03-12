@@ -7,21 +7,21 @@ $( document ).ready(function() {
     $("#sbbH").on("mouseleave", helper.buttonSideBarMLsbbH);
     $("#sbbH").on("mousedown", helper.buttonSideBarMDsbbH);
     
-    $("#sbbNA").on("mouseover", buttonSideBarMOsbbNA);
-    $("#sbbNA").on("mouseleave", buttonSideBarMLsbbNA);
-    $("#sbbNA").on("mousedown", buttonSideBarMDsbbNA);
+//    $("#sbbNA").on("mouseover", buttonSideBarMOsbbNA);
+//    $("#sbbNA").on("mouseleave", buttonSideBarMLsbbNA);
+//    $("#sbbNA").on("mousedown", buttonSideBarMDsbbNA);
     
     $("#sbbISA").on("mouseover", helper.buttonSideBarMOsbbISA);
     $("#sbbISA").on("mouseleave", helper.buttonSideBarMLsbbISA);
     $("#sbbISA").on("mousedown", helper.buttonSideBarMDsbbISA);    
 
-    $("#sbbII").on("mouseover", buttonSideBarMOsbbII);
-    $("#sbbII").on("mouseleave", buttonSideBarMLsbbII);
-    $("#sbbII").on("mousedown", buttonSideBarMDsbbII);
-    
-    $("#sbbINA").on("mouseover", buttonSideBarMOsbbINA);
-    $("#sbbINA").on("mouseleave", buttonSideBarMLsbbINA);
-    $("#sbbINA").on("mousedown", buttonSideBarMDsbbINA);
+//    $("#sbbII").on("mouseover", buttonSideBarMOsbbII);
+//    $("#sbbII").on("mouseleave", buttonSideBarMLsbbII);
+//    $("#sbbII").on("mousedown", buttonSideBarMDsbbII);
+//    
+//    $("#sbbINA").on("mouseover", buttonSideBarMOsbbINA);
+//    $("#sbbINA").on("mouseleave", buttonSideBarMLsbbINA);
+//    $("#sbbINA").on("mousedown", buttonSideBarMDsbbINA);
 });
 
 var helper = {
@@ -41,15 +41,15 @@ var helper = {
 
 
     // side bar button Mouse Over side bar button Info South America
-    buttonSideBarMOsbbISA: function (button) {
+    buttonSideBarMOsbbISA: function () {
         $("#sbbISA").css("background-color", "skyblue")
     },
     // side bar button Mouse Leave side bar button Info South America
-    buttonSideBarMLsbbISA: function (button) {
+    buttonSideBarMLsbbISA: function () {
         $("#sbbISA").css("background-color", "transparent")
     },
     // side bar button Mouse Down side bar button Info South America
-    buttonSideBarMDsbbISA: function (button) {
+    buttonSideBarMDsbbISA: function () {
         $("#sbbISA").css("background-color", "skyblue");
         location.href = "info-SouthAmerica.html";
     }
@@ -82,5 +82,5 @@ var helper = {
 //        $("#sbbINA").css("background-color", "skyblue");
 //        location.href = "info-NorthAmerica.html";
 //    }                                                           
-}
+}   //helper
 
