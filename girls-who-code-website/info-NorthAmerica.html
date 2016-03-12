@@ -5,14 +5,15 @@
         <title> Info Card: North America </title>
         
         <link rel = "stylesheet" href = "style.css" type = "text/css"> 
-        <script type="text/javascript" src="app.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.js"></script>
+        <script type="text/javascript" src="app.js"></script>
 
     </head>
 
     <body>
         
     
+
         <div class = "mainContent" >  
             <div class = "imageContainer" width = "100%">
                 <div class = "imageSubcontainer">
@@ -109,9 +110,7 @@
                 <div class = "footerSubContatiner">
                     <p> Monte C </p>
                 </div>
-            </div>
-            
-            
+            </div>    
         </div>
         
         
@@ -121,23 +120,24 @@
                 <button height = "100%" class = "buttonTopBar" onclick = "testButton(this)" > Heyyyyy </button>
             </div>
         </div>
+
         
         <div class = "sideBarContainer">
             <div class = "sideBarSubContainer">
-                 <div class = "sideBarButtonSubContainer"> 
-                    <button height = "100%" class = "buttonSideBar" onclick = "sideBarButtonHome(this)" > Home </button>
+                <div class = "sideBarButtonSubContainer"> 
+                    <button height = "100%" class = "buttonSideBar" id = "sbbH" onclick = "sideBarButtonHome(this)" > Home </button>
                 </div>
                 
                 <div class = "sideBarButtonSubContainer"> 
-                    <button height = "100%" class = "buttonSideBar" onclick = "sideBarButtonSA(this)" > INFO: South America </button>
+                    <button height = "100%" class = "buttonSideBar" id = "sbbSA" onclick = "sideBarButtonSA(this)" > INFO: South America </button>
                 </div>
                 
                 <div class = "sideBarButtonSubContainer"> 
-                    <button height = "100%" class = "buttonSideBar" onclick = "sideBarButtonI(this)" > INFO: Inka America </button>
+                    <button height = "100%" class = "buttonSideBar" id = "sbbI" onclick = "sideBarButtonI(this)" > INFO: Inka America </button>
                 </div>
                 
                 <div class = "sideBarButtonSubContainer"> 
-                    <button height = "100%" class = "buttonSideBar" onclick = "sideBarButtonNA(this)" > INFO: North America </button>
+                    <button height = "100%" class = "buttonSideBar" id = "sbbNA" onclick = "sideBarButtonNA(this)" > INFO: North America </button>
                 </div>
 
             </div>
