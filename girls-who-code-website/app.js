@@ -15,13 +15,13 @@ $( document ).ready(function() {
     $("#sbbISA").on("mouseleave", helper.buttonSideBarMLsbbISA);
     $("#sbbISA").on("mousedown", helper.buttonSideBarMDsbbISA);    
 
-//    $("#sbbII").on("mouseover", buttonSideBarMOsbbII);
-//    $("#sbbII").on("mouseleave", buttonSideBarMLsbbII);
-//    $("#sbbII").on("mousedown", buttonSideBarMDsbbII);
-//    
-//    $("#sbbINA").on("mouseover", buttonSideBarMOsbbINA);
-//    $("#sbbINA").on("mouseleave", buttonSideBarMLsbbINA);
-//    $("#sbbINA").on("mousedown", buttonSideBarMDsbbINA);
+    $("#sbbII").on("mouseover", helper.buttonSideBarMOsbbII);
+    $("#sbbII").on("mouseleave", helper.buttonSideBarMLsbbII);
+    $("#sbbII").on("mousedown", helper.buttonSideBarMDsbbII);
+    
+    $("#sbbINA").on("mouseover", helper.buttonSideBarMOsbbINA);
+    $("#sbbINA").on("mouseleave", helper.buttonSideBarMLsbbINA);
+    $("#sbbINA").on("mousedown", helper.buttonSideBarMDsbbINA);
 });
 
 var helper = {
@@ -52,35 +52,34 @@ var helper = {
     buttonSideBarMDsbbISA: function () {
         $("#sbbISA").css("background-color", "skyblue");
         location.href = "info-SouthAmerica.html";
-    }
-//
-//    // side bar button Mouse Over side bar button Info Inka
-//    function buttonSideBarMOsbbII (button) {
-//        $("#sbbII").css("background-color", "skyblue")
-//    }
-//    // side bar button Mouse Leave side bar buttonInfo Inka
-//    function buttonSideBarMLsbbII (button) {
-//        $("#sbbII").css("background-color", "transparent")
-//    }
-//    // side bar button Mouse Down side bar button Info Inka
-//    function buttonSideBarMDsbbII (button) {
-//        $("#sbbII").css("background-color", "skyblue");
-//        location.href = "info-Inkas.html";
-//    }
-//
-//
-//    // side bar button Mouse Over side bar button Info North America
-//    function buttonSideBarMOsbbINA (button) {
-//        $("#sbbINA").css("background-color", "skyblue");
-//    }
-//    // side bar button Mouse Leave side bar button Info North America
-//    function buttonSideBarMLsbbINA (button) {
-//        $("#sbbINA").css("background-color", "transparent");
-//    }
-//    //side bar button Mouse Down side bar button Info North America
-//    function buttonSideBarMDsbbINA (button) {
-//        $("#sbbINA").css("background-color", "skyblue");
-//        location.href = "info-NorthAmerica.html";
-//    }                                                           
+    },
+
+    // side bar button Mouse Over side bar button Info Inka
+    buttonSideBarMOsbbII: function () {
+        $("#sbbII").css("background-color", "skyblue")
+    },
+    // side bar button Mouse Leave side bar button Info Inka
+    buttonSideBarMLsbbII: function () {
+        $("#sbbII").css("background-color", "transparent")
+    },
+    // side bar button Mouse Down side bar button Info Inka
+    buttonSideBarMDsbbII: function () {
+        $("#sbbII").css("background-color", "skyblue");
+        location.href = "info-Inkas.html";
+    },
+
+    // side bar button Mouse Over side bar button Info North America
+    buttonSideBarMOsbbINA: function () {
+        $("#sbbINA").css("background-color", "skyblue");
+    },
+    // side bar button Mouse Leave side bar button Info North America
+    buttonSideBarMLsbbINA: function () {
+        $("#sbbINA").css("background-color", "transparent");
+    },
+    //side bar button Mouse Down side bar button Info North America
+    buttonSideBarMDsbbINA: function () {
+        $("#sbbINA").css("background-color", "skyblue");
+        location.href = "info-NorthAmerica.html";
+    }                                                           
 }   //helper
 
