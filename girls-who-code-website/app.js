@@ -1,3 +1,9 @@
+$( document ).ready(function() {
+    alert("ready")
+});
+
+
+
 function sideBarButtonSA (button){
     location.href = "info-SouthAmerica.html";
 }
@@ -13,3 +19,7 @@ function sideBarButtonNA (button){
 function sideBarButtonHome (button) {
     location.href = "home.html";
 }
+
+$("buttonSideBar").mouseover(function buttonSideBarMO (button) {
+    console.log("gsadgdsaf");
+});
