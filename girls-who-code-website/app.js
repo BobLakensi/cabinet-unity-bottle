@@ -6,6 +6,10 @@ $( document ).ready(function() {
     $("#sbbH").on("mouseleave", buttonSideBarMLsbbH);
     $("#sbbH").on("mousedown", buttonSideBarMDsbbH);
     
+    $("#sbbNA").on("mouseover", buttonSideBarMOsbbNA);
+    $("#sbbNA").on("mouseleave", buttonSideBarMLsbbNA);
+    $("#sbbNA").on("mousedown", buttonSideBarMDsbbNA);
+    
     $("#sbbISA").on("mouseover", buttonSideBarMOsbbSA);
     $("#sbbISA").on("mouseleave", buttonSideBarMLsbbSA);
     $("#sbbISA").on("mousedown", buttonSideBarMDsbbSA);    
@@ -19,24 +23,6 @@ $( document ).ready(function() {
     $("#sbbINA").on("mousedown", buttonSideBarMDsbbNA);
 });
 
-
-
-function sideBarButtonSA (button){
-    location.href = "info-SouthAmerica.html";
-}
-
-function sideBarButtonI (button){
-    location.href = "info-Inkas.html";
-}
-
-function sideBarButtonNA (button){
-    location.href = "info-NorthAmerica.html";
-}
-
-function sideBarButtonHome (button) {
-    location.href = "home.html";
-}
-
 // side bar button Mouse Over side bar button home
 function buttonSideBarMOsbbH (button) {
     $("#sbbH").css("background-color", "skyblue");
@@ -48,6 +34,7 @@ function buttonSideBarMLsbbH (button) {
 // side bar button Mouse Down side bar button home
 function buttonSideBarMDsbbH (button) {
     $("#sbbIH").css("background-color", "skyblue");
+    location.href = "home.html";
 }
 
 
@@ -62,6 +49,7 @@ function buttonSideBarMLsbbNA (button) {
 //side bar button Mouse Down side bar button Info North America
 function buttonSideBarMDsbbNA (button) {
     $("#sbbINA").css("background-color", "skyblue");
+    location.href = "info-NorthAmerica.html";
 }
 
 
@@ -75,7 +63,8 @@ function buttonSideBarMLsbbSA (button) {
 }
 // side bar button Mouse Down side bar button Info South America
 function buttonSideBarMDsbbSA (button) {
-    $("#sbbISA").css("background-color", "skyblue")
+    $("#sbbISA").css("background-color", "skyblue");
+    location.href = "info-SouthAmerica.html";
 }
 
 // side bar button Mouse Over side bar button Info Inka
@@ -88,6 +77,7 @@ function buttonSideBarMLsbbI (button) {
 }
 // side bar button Mouse Down side bar button Info Inka
 function buttonSideBarMDsbbI (button) {
-    $("#sbbII").css("background-color", "skyblue")
+    $("#sbbII").css("background-color", "skyblue");
+    location.href = "info-Inkas.html";
 }
 
