@@ -32,7 +32,7 @@ function sideBarButtonHome (button) {
 
 // side bar button Mouse Over side bar button home
 function buttonSideBarMOsbbH (button) {
-    $("#sbbH").css("background-color", "black");
+    $("#sbbH").css("background-color", "skyblue");
 }
 // side bar button Mouse Leave side bar button home
 function buttonSideBarMLsbbH (button) {
@@ -40,7 +40,7 @@ function buttonSideBarMLsbbH (button) {
 }
 // side bar button Mouse Down side bar button home
 function buttonSideBarMDsbbH (button) {
-    $("#sbbH").css("background-color", "blue");
+    $("#sbbH").css("background-color", "skyblue");
 }
 
 //// side bar button Mouse Over side bar button North America
