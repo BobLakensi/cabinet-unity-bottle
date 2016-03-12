@@ -2,10 +2,12 @@ $( document ).ready(function() {
     //make sure document is ready
     console.log("ready");
     
-    $(".buttonSideBar").on("mouseover", buttonSideBarMO);
+    $("#sbbH").on("mouseover", buttonSideBarMOsbbH);
+    $("#sbbH").on("mouseleave", buttonSideBarMLsbbH);
     
-    $(".buttonSideBar").on("mouseleave", buttonSideBarML);
-    
+    $("#sbbNA").on("mouseover", buttonSideBarMOsbbNA);
+    $("#sbbSA").on("mouseover", buttonSideBarMOsbbSA);
+    $("#sbbI").on("mouseover", buttonSideBarMOsbbI);    
 });
 
 
@@ -26,11 +28,39 @@ function sideBarButtonHome (button) {
     location.href = "home.html";
 }
 
-function buttonSideBarMO (button) {
-    $(".buttonSideBar").css("background-color", "black")
+// side bar button Mouse Over side bar button home
+function buttonSideBarMOsbbH (button) {
+    $("#sbbH").css("background-color", "black");
+}
+// side bar button Mouse Leave side bar button home
+function buttonSideBarMLsbbH (button) {
+    $("#sbbH").css("background-color", "transparent");
 }
 
-function buttonSideBarML (button) {
-    $(".buttonSideBar").css("background-color", "transparent")
-}
+//// side bar button Mouse Over side bar button North America
+//function buttonSideBarMOsbbNA (button) {
+//    $(".buttonSideBar").css("background-color", "black")
+//}
+//// side bar button Mouse Leave side bar button North America
+//function buttonSideBarMLsbbNA (button) {
+//    $(".buttonSideBar").css("background-color", "transparent")
+//}
+//
+//// side bar button Mouse Over side bar button South America
+//function buttonSideBarMOsbbSA (button) {
+//    $(".buttonSideBar").css("background-color", "black")
+//}
+//// side bar button Mouse Leave side bar button South America
+//function buttonSideBarMLsbbSA (button) {
+//    $(".buttonSideBar").css("background-color", "transparent")
+//}
+//
+//// side bar button Mouse Over side bar button Inkas
+//function buttonSideBarMLsbbI (button) {
+//    $(".buttonSideBar").css("background-color", "transparent")
+//}
+//// side bar button Mouse Leave side bar button Inkas
+//function buttonSideBarMOsbbI (button) {
+//    $(".buttonSideBar").css("background-color", "transparent")
+//}
 
