@@ -46,7 +46,9 @@
     border: none;
     height: 50px;
     width: 100%;
+    text-align: left;
 }
+
 
 
 .mainContent {
