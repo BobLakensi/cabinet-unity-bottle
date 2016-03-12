@@ -41,8 +41,10 @@
 }
 
 .buttonSideBar {
+    background-color: transparent;
+    outline: none; 
+    border: none;
     height: 50px;
-    width: 100%;
 }
 
 
