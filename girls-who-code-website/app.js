@@ -55,7 +55,7 @@ var helper = {
     // side bar button Mouse Down side bar button home
     buttonSideBarMDsbbNA: function () {
         $("#sbbNA").css("background-color", "skyblue");
-        location.href = "home.html";
+        location.href = "native-americas.html";
     },
 
 
