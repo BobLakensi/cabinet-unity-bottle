@@ -1,5 +1,9 @@
 $( document ).ready(function() {
-    alert("ready")
+    //make sure document is ready
+    console.log("ready");
+    
+    $(".buttonSideBar").on("mouseover", buttonSideBarMO);
+    
 });
 
 
@@ -20,6 +24,7 @@ function sideBarButtonHome (button) {
     location.href = "home.html";
 }
 
-$("buttonSideBar").mouseover(function buttonSideBarMO (button) {
-    console.log("gsadgdsaf");
-});
+function buttonSideBarMO (button) {
+        console.log("gsadgdsaf");
+}
+
