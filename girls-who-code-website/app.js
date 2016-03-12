@@ -4,6 +4,8 @@ $( document ).ready(function() {
     
     $("#sbbH").on("mouseover", buttonSideBarMOsbbH);
     $("#sbbH").on("mouseleave", buttonSideBarMLsbbH);
+    $("#sbbH").on("mousedown", buttonSideBarMDsbbH)
+    
     
     $("#sbbNA").on("mouseover", buttonSideBarMOsbbNA);
     $("#sbbSA").on("mouseover", buttonSideBarMOsbbSA);
@@ -35,6 +37,10 @@ function buttonSideBarMOsbbH (button) {
 // side bar button Mouse Leave side bar button home
 function buttonSideBarMLsbbH (button) {
     $("#sbbH").css("background-color", "transparent");
+}
+// side bar button Mouse Down side bar button home
+function buttonSideBarMDsbbH (button) {
+    $("#sbbH").css("background-color", "blue");
 }
 
 //// side bar button Mouse Over side bar button North America
