@@ -9,3 +9,7 @@ function sideBarButtonI (button){
 function sideBarButtonNA (button){
     location.href = "info-NorthAmerica.html";
 }
+
+function sideBarButtonHome (button) {
+    location.href = "home.html";
+}
