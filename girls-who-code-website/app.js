@@ -4,6 +4,8 @@ $( document ).ready(function() {
     
     $(".buttonSideBar").on("mouseover", buttonSideBarMO);
     
+    $(".buttonSideBar").on("mouseleave", buttonSideBarML);
+    
 });
 
 
@@ -25,6 +27,10 @@ function sideBarButtonHome (button) {
 }
 
 function buttonSideBarMO (button) {
-        console.log("gsadgdsaf");
+    $(".buttonSideBar").css("background-color", "black")
+}
+
+function buttonSideBarML (button) {
+    $(".buttonSideBar").css("background-color", "transparent")
 }
 
