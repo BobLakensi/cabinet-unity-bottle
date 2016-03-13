@@ -32,6 +32,11 @@ $( document ).ready(function() {
     $("#sbbE17-18").on("mouseover", helper.europe17to18.buttonSideBarMOsbbE17to18);
     $("#sbbE17-18").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbE17to18);
     $("#sbbE17-18").on("mousedown", helper.europe17to18.buttonSideBarMDsbbE17to18);
+    
+    //side bar button Info Rococo
+    $("#sbbIR").on("mouseover", helper.europe17to18.buttonSideBarMOsbbIR);
+    $("#sbbIR").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbIR);
+    $("#sbbIR").on("mousedown", helper.europe17to18.buttonSideBarMDsbbIR);
 });
 
 var helper = {    
@@ -143,7 +148,27 @@ var helper = {
             $("#sbbE17-18").css("background-color", "skyblue");
             //open home page
             location.href = "europe-1700-1800/europe-1700-1800.html";
+        },
+        
+        
+        // side bar button Mouse Over side bar button Info Rococo
+        buttonSideBarMOsbbIR: function () {
+            //turn button sky blue when mouse over
+            $("#sbbIR").css("background-color", "skyblue");
+        }, 
+        // side bar button Mouse Over side bar button Info Rococo
+        buttonSideBarMLsbbIR: function () {
+            //turn button transparent when mouse leaves
+            $("#sbbIR").css("background-color", "transparent");
+        },
+        // side bar button Mouse Over side bar button Info Rococo
+        buttonSideBarMDsbbIR: function () {
+            //turn button sky blue when clicked
+            $("#sbbIR").css("background-color", "skyblue");
+            //open home page
+            location.href = "europe-1700-1800/info-Rococo.html";
         }
+        
      }   //Europe 17 to 18
 }   //helper
 
