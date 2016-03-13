@@ -176,7 +176,7 @@ var helper = {
             //turn button sky blue when clicked
             $("#sbbIR").css("background-color", "skyblue");
             //open Rococo page
-            location.href = "europe-1700-1800/info-Rococo.html";
+            location.href = "info-Rococo.html";
         },
         
         
@@ -195,7 +195,7 @@ var helper = {
             //turn button sky blue when clicked
             $("#sbbIE").css("background-color", "skyblue");
             //open Enlightenment page
-            location.href = "europe-1700-1800/info-Enlightenment.html";
+            location.href = "info-Enlightenment.html";
         },
         
         
@@ -214,7 +214,7 @@ var helper = {
             //turn button sky blue when clicked
             $("#sbbIN").css("background-color", "skyblue");
             //open Neoclassicism page
-            location.href = "europe-1700-1800/info-Neoclassicism.html";
+            location.href = "info-Neoclassicism.html";
         }
         
      }   //Europe 17 to 18
