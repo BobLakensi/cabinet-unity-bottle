@@ -37,6 +37,16 @@ $( document ).ready(function() {
     $("#sbbIR").on("mouseover", helper.europe17to18.buttonSideBarMOsbbIR);
     $("#sbbIR").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbIR);
     $("#sbbIR").on("mousedown", helper.europe17to18.buttonSideBarMDsbbIR);
+    
+    //side bar button Info Enlightenment
+    $("#sbbIE").on("mouseover", helper.europe17to18.buttonSideBarMOsbbIE);
+    $("#sbbIE").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbIE);
+    $("#sbbIE").on("mousedown", helper.europe17to18.buttonSideBarMDsbbIE);
+    
+    //side bar button Info Enlightenment
+    $("#sbbIN").on("mouseover", helper.europe17to18.buttonSideBarMOsbbIN);
+    $("#sbbIN").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbIN);
+    $("#sbbIN").on("mousedown", helper.europe17to18.buttonSideBarMDsbbIN);
 });
 
 var helper = {    
@@ -146,7 +156,7 @@ var helper = {
         buttonSideBarMDsbbE17to18: function () {
             //turn button sky blue when clicked
             $("#sbbE17-18").css("background-color", "skyblue");
-            //open home page
+            //open europe-1700-1800 page
             location.href = "europe-1700-1800/europe-1700-1800.html";
         },
         
@@ -165,8 +175,46 @@ var helper = {
         buttonSideBarMDsbbIR: function () {
             //turn button sky blue when clicked
             $("#sbbIR").css("background-color", "skyblue");
-            //open home page
+            //open Rococo page
             location.href = "europe-1700-1800/info-Rococo.html";
+        },
+        
+        
+        // side bar button Mouse Over side bar button Info Enlightenment
+        buttonSideBarMOsbbIE: function () {
+            //turn button sky blue when mouse over
+            $("#sbbIE").css("background-color", "skyblue");
+        }, 
+        // side bar button Mouse Over side bar button Info Enlightenment
+        buttonSideBarMLsbbIE: function () {
+            //turn button transparent when mouse leaves
+            $("#sbbIE").css("background-color", "transparent");
+        },
+        // side bar button Mouse Over side bar button Info Enlightenment
+        buttonSideBarMDsbbIE: function () {
+            //turn button sky blue when clicked
+            $("#sbbIE").css("background-color", "skyblue");
+            //open Enlightenment page
+            location.href = "europe-1700-1800/info-Enlightenment.html";
+        },
+        
+        
+        // side bar button Mouse Over side bar button Info Neoclassicism
+        buttonSideBarMOsbbIN: function () {
+            //turn button sky blue when mouse over
+            $("#sbbIN").css("background-color", "skyblue");
+        }, 
+        // side bar button Mouse Over side bar button Info Neoclassicism
+        buttonSideBarMLsbbIN: function () {
+            //turn button transparent when mouse leaves
+            $("#sbbIN").css("background-color", "transparent");
+        },
+        // side bar button Mouse Over side bar button Info Neoclassicism
+        buttonSideBarMDsbbIN: function () {
+            //turn button sky blue when clicked
+            $("#sbbIN").css("background-color", "skyblue");
+            //open Neoclassicism page
+            location.href = "europe-1700-1800/info-Neoclassicism.html";
         }
         
      }   //Europe 17 to 18
