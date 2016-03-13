@@ -60,9 +60,24 @@
     
 }
 
+.infoHeaderContainer {
+    margin: 30px;
+
+}
+
+.infoHeaderSubContainer {
+    background-color: gainsboro;
+    border-radius: 5px;
+    margin-top: 1px;
+    text-align: center;
+}
+
+.infoHeaderText {
+    font-family: sans-serif;
+}
+
 .image1Div {
     align-content: center;
-
 }              
 
 .imageContainer {
