@@ -142,7 +142,7 @@ var helper = {
             //turn button sky blue when clicked
             $("#sbbE17-18").css("background-color", "skyblue");
             //open home page
-            location.href = "home.html";
+            location.href = "europe-1700-1800/europe-1700-1800.html";
         }
      }   //Europe 17 to 18
 }   //helper
