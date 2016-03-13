@@ -61,18 +61,18 @@
 }
 
 .infoHeaderContainer {
-    margin: 30px;
-
+    width = 100%;
 }
 
 .infoHeaderSubContainer {
-    background-color: gainsboro;
-    border-radius: 5px;
-    margin-top: 1px;
+    background-color: blueviolet;
     text-align: center;
+    padding: 7px;
 }
 
 .infoHeaderText {
+    margin: 0px;
+    padding: 0px;
     font-family: sans-serif;
 }
 
