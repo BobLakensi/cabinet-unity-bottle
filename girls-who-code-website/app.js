@@ -29,9 +29,9 @@ $( document ).ready(function() {
     $("#sbbINA").on("mousedown", helper.nativeAmericas.buttonSideBarMDsbbINA);
     
     //side bar button Europe 1700 - 1800
-    $("#sbbE17-18").on("mouseover", helper.buttonSideBarMOsbbE17to18);
-    $("#sbbE17-18").on("mouseleave", helper.buttonSideBarMLsbbE17to18);
-    $("#sbbE17-18").on("mousedown", helper.buttonSideBarMDsbbE17to18);
+    $("#sbbE17-18").on("mouseover", helper.europe17to18.buttonSideBarMOsbbE17to18);
+    $("#sbbE17-18").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbE17to18);
+    $("#sbbE17-18").on("mousedown", helper.europe17to18.buttonSideBarMDsbbE17to18);
 });
 
 var helper = {    
@@ -124,6 +124,26 @@ var helper = {
             //open north america info
             location.href = "info-NorthAmerica.html";
         }   
-    }   //native americas
+    },   //native americas
+    
+    europe17to18: {
+        // side bar button Mouse Over side bar button Europe 17 to `18
+        buttonSideBarMOsbbE17to18: function () {
+            //turn button sky blue when mouse over
+            $("#sbbE17-18").css("background-color", "skyblue");
+        }, 
+        // side bar button Mouse Over side bar button Europe 17 to `18
+        buttonSideBarMLsbbE17to18: function () {
+            //turn button transparent when mouse leaves
+            $("#sbbE17-18").css("background-color", "transparent");
+        },
+        // side bar button Mouse Over side bar button Europe 17 to `18
+        buttonSideBarMDsbbE17to18: function () {
+            //turn button sky blue when clicked
+            $("#sbbE17-18").css("background-color", "skyblue");
+            //open home page
+            location.href = "home.html";
+        }
+     }   //Europe 17 to 18
 }   //helper
 
