@@ -3,10 +3,15 @@ $( document ).ready(function() {
     
     console.log("ready");
     
-    //side bar button Home
-    $("#sbbH").on("mouseover", helper.buttonSideBarMOsbbH);
-    $("#sbbH").on("mouseleave", helper.buttonSideBarMLsbbH);
-    $("#sbbH").on("mousedown", helper.buttonSideBarMDsbbH);
+    //side bar button Home inside its folder
+    $("#sbbHI").on("mouseover", helper.buttonSideBarMOsbbHI);
+    $("#sbbHI").on("mouseleave", helper.buttonSideBarMLsbbHI);
+    $("#sbbHI").on("mousedown", helper.buttonSideBarMDsbbHI);
+    
+    //side bar button Home inside its folder
+    $("#sbbHO").on("mouseover", helper.buttonSideBarMOsbbHO);
+    $("#sbbHO").on("mouseleave", helper.buttonSideBarMLsbbHO);
+    $("#sbbHO").on("mousedown", helper.buttonSideBarMDsbbHO);
     
     //side bar button North America
     $("#sbbNA").on("mouseover", helper.nativeAmericas.buttonSideBarMOsbbNA);
@@ -28,10 +33,15 @@ $( document ).ready(function() {
     $("#sbbINA").on("mouseleave", helper.nativeAmericas.buttonSideBarMLsbbINA);
     $("#sbbINA").on("mousedown", helper.nativeAmericas.buttonSideBarMDsbbINA);
     
-    //side bar button Europe 1700 - 1800
-    $("#sbbE17-18").on("mouseover", helper.europe17to18.buttonSideBarMOsbbE17to18);
-    $("#sbbE17-18").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbE17to18);
-    $("#sbbE17-18").on("mousedown", helper.europe17to18.buttonSideBarMDsbbE17to18);
+    //side bar button Europe 1700 - 1800 Outside of its folder
+    $("#sbbE17-18O").on("mouseover", helper.europe17to18.buttonSideBarMOsbbE17to18O);
+    $("#sbbE17-18O").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbE17to18O);
+    $("#sbbE17-18O").on("mousedown", helper.europe17to18.buttonSideBarMDsbbE17to18O);
+    
+    //side bar button Europe 1700 - 1800 Inside of its folder
+    $("#sbbE17-18I").on("mouseover", helper.europe17to18.buttonSideBarMOsbbE17to18I);
+    $("#sbbE17-18I").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbE17to18I);
+    $("#sbbE17-18I").on("mousedown", helper.europe17to18.buttonSideBarMDsbbE17to18I);
     
     //side bar button Info Rococo
     $("#sbbIR").on("mouseover", helper.europe17to18.buttonSideBarMOsbbIR);
@@ -51,21 +61,39 @@ $( document ).ready(function() {
 
 var helper = {    
     // side bar button Mouse Over side bar button home
-    buttonSideBarMOsbbH: function () {
+    buttonSideBarMOsbbHI: function () {
         //turn button sky blue when mouse over
-        $("#sbbH").css("background-color", "skyblue");
+        $("#sbbHI").css("background-color", "skyblue");
     },
     // side bar button Mouse Leave side bar button home
-    buttonSideBarMLsbbH: function () {
+    buttonSideBarMLsbbHI: function () {
         //turn button transparent when mouse leaves
-        $("#sbbH").css("background-color", "transparent");
+        $("#sbbHI").css("background-color", "transparent");
     },
     // side bar button Mouse Down side bar button home
-    buttonSideBarMDsbbH: function () {
+    buttonSideBarMDsbbHI: function () {
         //turn button sky blue when clicked
-        $("#sbbIH").css("background-color", "skyblue");
+        $("#sbbHI").css("background-color", "skyblue");
         //open home page
         location.href = "home.html";
+    },
+    
+    // side bar button Mouse Over side bar button home
+    buttonSideBarMOsbbHO: function () {
+        //turn button sky blue when mouse over
+        $("#sbbHO").css("background-color", "skyblue");
+    },
+    // side bar button Mouse Leave side bar button home
+    buttonSideBarMLsbbHO: function () {
+        //turn button transparent when mouse leaves
+        $("#sbbHO").css("background-color", "transparent");
+    },
+    // side bar button Mouse Down side bar button home
+    buttonSideBarMDsbbHO: function () {
+        //turn button sky blue when clicked
+        $("#sbbHO").css("background-color", "skyblue");
+        //open home page
+        location.href = "../home.html";
     },
     
     nativeAmericas: {
@@ -143,21 +171,39 @@ var helper = {
     
     europe17to18: {
         // side bar button Mouse Over side bar button Europe 17 to `18
-        buttonSideBarMOsbbE17to18: function () {
+        buttonSideBarMOsbbE17to18O: function () {
             //turn button sky blue when mouse over
-            $("#sbbE17-18").css("background-color", "skyblue");
+            $("#sbbE17-18O").css("background-color", "skyblue");
         }, 
         // side bar button Mouse Over side bar button Europe 17 to `18
-        buttonSideBarMLsbbE17to18: function () {
+        buttonSideBarMLsbbE17to18O: function () {
             //turn button transparent when mouse leaves
-            $("#sbbE17-18").css("background-color", "transparent");
+            $("#sbbE17-18O").css("background-color", "transparent");
         },
         // side bar button Mouse Over side bar button Europe 17 to `18
-        buttonSideBarMDsbbE17to18: function () {
+        buttonSideBarMDsbbE17to18O: function () {
             //turn button sky blue when clicked
-            $("#sbbE17-18").css("background-color", "skyblue");
+            $("#sbbE17-18O").css("background-color", "skyblue");
             //open europe-1700-1800 page
             location.href = "europe-1700-1800/europe-1700-1800.html";
+        },
+        
+        // side bar button Mouse Over side bar button Europe 17 to `18
+        buttonSideBarMOsbbE17to18I: function () {
+            //turn button sky blue when mouse over
+            $("#sbbE17-18I").css("background-color", "skyblue");
+        }, 
+        // side bar button Mouse Over side bar button Europe 17 to `18
+        buttonSideBarMLsbbE17to18I: function () {
+            //turn button transparent when mouse leaves
+            $("#sbbE17-18I").css("background-color", "transparent");
+        },
+        // side bar button Mouse Over side bar button Europe 17 to `18
+        buttonSideBarMDsbbE17to18I: function () {
+            //turn button sky blue when clicked
+            $("#sbbE17-18I").css("background-color", "skyblue");
+            //open europe-1700-1800 page
+            location.href = "europe-1700-1800.html";
         },
         
         
