@@ -33,9 +33,6 @@
 // x= new SBBC();
 // x.buttonOnClick()
 
-function SBBH(id) {
-    console.log(id);
-}
 
 $( document ).ready(function() {
     //make sure document is ready
@@ -53,9 +50,7 @@ $( document ).ready(function() {
     $("#sbbHI").on("mouseleave", helper.buttonSideBarMLsbbHI);
     $("#sbbHI").on("mousedown", helper.buttonSideBarMDsbbHI);
     
-    
-    new SBBH("#sbbHI");
-    
+        
     //side bar button Home inside its folder
     $("#sbbHO").on("mouseover", helper.buttonSideBarMOsbbHO);
     $("#sbbHO").on("mouseleave", helper.buttonSideBarMLsbbHO);
