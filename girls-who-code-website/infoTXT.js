@@ -1,0 +1,10 @@
+var info = [
+    {"period": "North America", 
+     "environment": "The four major regions were  the American Southwest,the northern coast and Alaska, the Great Plains, and the Northeast. North America has been divided into cultural regions based on language and social and artistic patterns.", 
+    "military/political": "There were many different tribes and nations living throughout North America. aAter the arrival of the europeans and the Native Americans being forced out of their land they were soon forced to assimilate into the white culture.",
+     "intellectual/artistic": "Many parts of the indigenous cultures of the United States and Canada have to get back to as far as 12,000 years ago, although many of the surviving objects date from the past two thousand years. Art and architecture were made from local products. Early Native American artists excelled in working stone into a variety of utilitarian and ceremonial objects. Effigy mounds were also made in respect of nature and agricultural fertility.",
+     "religion": "Nature was very important in the information society and religion and it was respected by the Native Americans. Many rules were made about nature. Shamanic rituals and dream guidance were a big part of Native American religion. Message Eman mermaid following the beliefs on respect of nature and also used in religious ceremonies.",
+     "economic/social": "After the Native Americans were from their land, they made everything for the white market and to survive. Lifestyles of the people there is throughout the entire country. What is the cultures existed separately not together and they were stimulated to the white culture after the arrival of the Europeans. The ideas of sharing, no personal property and living together were prominent in the Native American culture. Status was by leadership and military achievements rather than money and land."
+    }
+    
+]
