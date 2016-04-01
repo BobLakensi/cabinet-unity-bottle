@@ -208,6 +208,143 @@ var info = [
          "img": "",
          "caption": ""
      }  //economic/social
-    }   //Neoclassical
+    },   //Neoclassical
+    
+    {"period": "Romanicism",
+      "mapIMG": "",
+     
+     "environment": {
+         "text": "The Industrial Revolution caused a growth of city populations and also polluted the environment. Ideas of manifest destiny, that people have the right and duty to travel from east to west and civilize lands, caused the settling of the vast American west. The landscape was changed from the sublime and natural to being occupied by humans.",
+         "img": "",
+         "caption": "The ideas of manifest destiny as seen in Thomas Cole’s The Oxbow as it depicts Americans settling the land."
+     }, //environment
+     
+     "military/political": {
+         "text": " After the French Revolution of 1789, Napoleon Bonaparte came to power. He embraced classicism as a symbol of authority. With his experience in various French army commands, through his Napoleonic Wars, he ambitiously tried to gain control of continental Europe through warfare. After a failed invasion against Russia, Napoleon was exiled and abdicated his imperial throne. The political geography of Europe changed drastically and France returns to a monarchy after the exile of Napoleon. The US Civil war was from 1860 - 1865.",
+         "img": "",
+         "caption": "The French and Spanish conflict can be seen in Goya’s The Third of May as it depicts the French shooting at the French."
+     }, //military/political"
+     
+      "intellectual/artistic": {
+         "text": "The Industrial Revolution caused a population boom and railroads spread throughout Europe and the Americas, transporting goods and people. New construction techniques had a major impact on architectural design and construction and engineering. The invention of photography revolutionized picture making. Jean-Jacques David became Napoleon’s official painter. Feeling and imagination was given priority over Neoclassical reason. Art explored the exotic, erotic, and fantastic in their art. Art used bright color and diagonals to express emotion and color. Edges were smudged and brush strokes energetic to look more dreamlike and fantastic, similar to Impressionism. The past was looked back to and were diffused into art. Romantic painters often chose landscapes as an ideal subject to to express the Romantic theme of of the soul unified with the natural world, transcendentalism. Transcendentalism was a philosophical and religious movement stemming from Harvard and was a reaction against the modern world and the industrial revolution. Landscapes were a respected genre and often had morals and was allegorical when depicted in art. In America, it was spearheaded by the Hudson River School. It was historical, political, and philosophical. Romantic architecture combines the old styles with modern materials and techniques. There was an appreciation for the past as the current was seen as bad because of the Industrial Revolution and nationalism to identify with the past ideals. The historical designs were thought to be of moral purity of the religious architecture of the middle ages. There was a respect for the handmade as everything during this time was mass produced in factories. 
+ ",
+         "img": "",
+         "caption": "Art explored the exotic, erotic, and fantastic in their art, evident in Ingres’s  Grand Odalisque as it depicts these."
+     }, //intellectual/artistic
+     
+     "religion": {
+         "text": "Transcendentalism was a philosophical and religious movement stemming from Harvard and was a reaction against the modern world and the Industrial Revolution. ",
+         "img": "",
+         "caption": "Frederic Edwin Church’s Twilight in the WIlderness depicts nature in according to transcendentalist beliefs"
+     }, //religion
+     
+     "economic/social": {
+         "text": "The Industrial Revolution saw the rise in capitalism and trade from the technological advances, including factories and railroads. Although England was the first to abolish slavery, the African Slave Trade was still prominent. There was a growth in city population as a result from the Industrial Revolution as well. ",
+         "img": "",
+         "caption": "Although England was the first to abolish slavery, the African Slave Trade was still prominent. This can be seen in Turner’s The Slave Ship as it depicts slaves and the slave trade."
+     }  //economic/social},  
+    },//Romaniticism
+    
+    {"period": "Realism",
+      "mapIMG": "",
+     
+     "environment": {
+         "text": "Neoclassicism started in Europe but soon spread out to the Americas, as classical ideals served as models for many American aspects of art, architecture, and government. ",
+         "img": "",
+         "caption": ""
+     }, //environment
+     
+     "military/political": {
+         "text": "Greece and Rome served as models for political organization. They represented civilized societies and enlightened political systems. There were many Revolutions stemming from classical ideals of patriotism and civic virtue. Democracy, liberty, and sacrifice to the state grew due to the classical civilization serving as models.",
+         "img": "",
+         "caption": ""
+     }, //military/political"
+     
+      "intellectual/artistic": {
+         "text": "A readmirization of the classical cultures caused them to be thought as the pinnacle of society. The Enlightenment’s emphasis on rationality probably added to the praising of the classical cultures as they embodied Enlightenment ideals. Revolutions, Reason, Rationality, and Roman (The 4 R’s) ideas grew in importance. The excavation of Pompeii and Herculaneum further whetted the appetite for classicism. The ancient world became a focus of study. Johann Winckelmann, the first modern art historian, published books on art and said it to be the most perfect form of art made by man. Edward Gibbon published his book on ancient Rome in 1776. They both helped spread Neoclassicism. Neoclassic art Incorporated subjects and styles of ancient art painting sculpture and architecture was the most prominent manifestations of Neoclassicism. Art was rational, attention was paid to detail, there was often a grand theme with morals involved. Many classical elements were used and there was a bigger focus on the line and perspective. ",
+         "img": "",
+         "caption": ""
+     }, //intellectual/artistic
+     
+     "religion": {
+         "text": "Religion lost much of its importance as a result of the Enlightenment’s ideas",
+         "img": "",
+         "caption": ""
+     }, //religion
+     
+     "economic/social": {
+         "text": "The classical cultures emphasized civic virtue, sacrifice, morality, patriotism, and liberty and became models during this period. The Grand Tour was fueling this interest in the classical cultures.",
+         "img": "",
+         "caption": ""
+     }  //economic/social
+    },  //Realism
+    
+    {"period": "Early Modernism",
+      "mapIMG": "",
+     
+     "environment": {
+         "text": "Neoclassicism started in Europe but soon spread out to the Americas, as classical ideals served as models for many American aspects of art, architecture, and government. ",
+         "img": "",
+         "caption": ""
+     }, //environment
+     
+     "military/political": {
+         "text": "Greece and Rome served as models for political organization. They represented civilized societies and enlightened political systems. There were many Revolutions stemming from classical ideals of patriotism and civic virtue. Democracy, liberty, and sacrifice to the state grew due to the classical civilization serving as models.",
+         "img": "",
+         "caption": ""
+     }, //military/political"
+     
+      "intellectual/artistic": {
+         "text": "A readmirization of the classical cultures caused them to be thought as the pinnacle of society. The Enlightenment’s emphasis on rationality probably added to the praising of the classical cultures as they embodied Enlightenment ideals. Revolutions, Reason, Rationality, and Roman (The 4 R’s) ideas grew in importance. The excavation of Pompeii and Herculaneum further whetted the appetite for classicism. The ancient world became a focus of study. Johann Winckelmann, the first modern art historian, published books on art and said it to be the most perfect form of art made by man. Edward Gibbon published his book on ancient Rome in 1776. They both helped spread Neoclassicism. Neoclassic art Incorporated subjects and styles of ancient art painting sculpture and architecture was the most prominent manifestations of Neoclassicism. Art was rational, attention was paid to detail, there was often a grand theme with morals involved. Many classical elements were used and there was a bigger focus on the line and perspective. ",
+         "img": "",
+         "caption": ""
+     }, //intellectual/artistic
+     
+     "religion": {
+         "text": "Religion lost much of its importance as a result of the Enlightenment’s ideas",
+         "img": "",
+         "caption": ""
+     }, //religion
+     
+     "economic/social": {
+         "text": "The classical cultures emphasized civic virtue, sacrifice, morality, patriotism, and liberty and became models during this period. The Grand Tour was fueling this interest in the classical cultures.",
+         "img": "",
+         "caption": ""
+     }  //economic/social
+    },  //Early Modernism
+    
+    {"period": "Photography",
+      "mapIMG": "",
+     
+     "environment": {
+         "text": "Neoclassicism started in Europe but soon spread out to the Americas, as classical ideals served as models for many American aspects of art, architecture, and government. ",
+         "img": "",
+         "caption": ""
+     }, //environment
+     
+     "military/political": {
+         "text": "Greece and Rome served as models for political organization. They represented civilized societies and enlightened political systems. There were many Revolutions stemming from classical ideals of patriotism and civic virtue. Democracy, liberty, and sacrifice to the state grew due to the classical civilization serving as models.",
+         "img": "",
+         "caption": ""
+     }, //military/political"
+     
+      "intellectual/artistic": {
+         "text": "A readmirization of the classical cultures caused them to be thought as the pinnacle of society. The Enlightenment’s emphasis on rationality probably added to the praising of the classical cultures as they embodied Enlightenment ideals. Revolutions, Reason, Rationality, and Roman (The 4 R’s) ideas grew in importance. The excavation of Pompeii and Herculaneum further whetted the appetite for classicism. The ancient world became a focus of study. Johann Winckelmann, the first modern art historian, published books on art and said it to be the most perfect form of art made by man. Edward Gibbon published his book on ancient Rome in 1776. They both helped spread Neoclassicism. Neoclassic art Incorporated subjects and styles of ancient art painting sculpture and architecture was the most prominent manifestations of Neoclassicism. Art was rational, attention was paid to detail, there was often a grand theme with morals involved. Many classical elements were used and there was a bigger focus on the line and perspective. ",
+         "img": "",
+         "caption": ""
+     }, //intellectual/artistic
+     
+     "religion": {
+         "text": "Religion lost much of its importance as a result of the Enlightenment’s ideas",
+         "img": "",
+         "caption": ""
+     }, //religion
+     
+     "economic/social": {
+         "text": "The classical cultures emphasized civic virtue, sacrifice, morality, patriotism, and liberty and became models during this period. The Grand Tour was fueling this interest in the classical cultures.",
+         "img": "",
+         "caption": ""
+     }  //economic/social},  
+    }   //Photography
     
 ];
