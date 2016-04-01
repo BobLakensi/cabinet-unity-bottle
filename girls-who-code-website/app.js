@@ -103,20 +103,28 @@ $( document ).ready(function() {
 });
 
 var open = true;
-function ce (id, sbbc) {
-    var el = document.getElementById(id);
-    var c = document.getElementById(sbbc);
-    var px = document.getElementById(sbbc).offsetWidth;
+function ce (elid, sbbcid, mcid) {
+    var el = document.getElementById(elid); //element
+    var c = document.getElementById(sbbcid);    //(sidebar) container
+    var mc = document.getElementById(mcid); //main content
+    var px = c.offsetWidth;
     
     if (open == true){
         c.style.transition = "left 0.5s ease-out 0s"
         c.style.left = "-150px";
-//        c.style.overflow = "hidden"
+
+        mc.style.transition = "left 0.5s ease-out 0s"
+        mc.style.left = "30px"
+        
         open = false;
         console.log(open);
     } else if (open == false){
         c.style.transition = "left 0.5s ease-in 0s"
         c.style.left = "0px";
+        
+        mc.style.transition = "left 0.5s ease-in 0s"
+        mc.style.left = "180px";       
+        
         open = true;
         console.log(open);
     }
