@@ -318,32 +318,31 @@ var info = [
      "environment": {
          "text": "Photography originated in France, with the first practical photographic process developed there, but soon spread to the rest of Europe and the world. ",
          "img": "",
-         "caption": ""
+         "caption": "The spread of photography can be see in Josiah Johnson Hawes’s and Albert Sands Soutworth’s Early Operation under Ether, Massachusetts General Hospital as it was made in the US. "
      }, //environment
      
      "military/political": {
          "text": "Photography was also used for historical records, often depicting war scenes and propaganda for political purposes. ",
          "img": "",
-         "caption": ""
+         "caption": "Photography's use to depict warfare can be seen in Timothy O'Sullivan’s A Harvest of Death, Gettysburg, Pennsylvania as it depicts warfare. "
      }, //military/political"
      
       "intellectual/artistic": {
          "text": "Photography comes from “photo” meaning light and “graphos” which means to write.The invention of the camera in the mid 19th century followed by the art of photography had immense consequence for the modern experience. Louis-Jacques-Mande Daguerre and Henry Fox Talbot announced the first practical photographic process in 1839.In 1862, the French court ruled photography as a form of art protected under copyright laws. It challenged the traditional ways of depicting art, but some artists welcomed it. Photography challenged painting. Photography was also used in paint as ways to render the images in the painting or a cheaper and faster way to reproduce the painting. During this time, artistic patronage shifter from the elite few to a broader range of people. It was soon used to influence modern life and changes to communication and information management. Sequential photos of movement became the forerunners to modern cinema. Photography was faster and cheaper to make than paintings and depicted 3d objects on a 2d surface. ",
          "img": "",
-         "caption": ""
+         "caption": "Sequential photos of movement became the forerunners to modern cinema, as seen in Eadweard Muybridge’s Horse Galloping as it shows sequential pictures of a horse in motion."
      }, //intellectual/artistic
      
      "religion": {
-         "text": "Religion is in decline for science. 
-",
+         "text": "Religion is in decline for science. ",
          "img": "",
-         "caption": ""
+         "caption": " Religion is in decline for science, seen in Louis-Jacques-Mande Daguerre’s Still Life in the Studio as it doesn’t depict religion. "
      }, //religion
      
      "economic/social": {
          "text": "The growing and increasingly powerful middle class were the main patrons of art. Art becomes more commercial. ",
          "img": "",
-         "caption": ""
+         "caption": "The growing and increasingly powerful middle class were the main patrons of art, evident in Julia Margaret Cameron’s Ophelia as it depicts the middle class."
      }  //economic/social},  
     }   //Photography
     
