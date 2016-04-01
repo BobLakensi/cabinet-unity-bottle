@@ -109,7 +109,7 @@ function ce (elid, sbbcid, mcid) {
     var mc = document.getElementById(mcid); //main content
     var px = c.offsetWidth;
     
-    if (open == true){
+    if (open){
         c.style.transition = "left 0.5s ease-out 0s"
         c.style.left = "-150px";
 
@@ -117,8 +117,7 @@ function ce (elid, sbbcid, mcid) {
         mc.style.left = "30px"
         
         open = false;
-        console.log(open);
-    } else if (open == false){
+    } else if (!open){
         c.style.transition = "left 0.5s ease-in 0s"
         c.style.left = "0px";
         
@@ -126,7 +125,6 @@ function ce (elid, sbbcid, mcid) {
         mc.style.left = "180px";       
         
         open = true;
-        console.log(open);
     }
 
 }
