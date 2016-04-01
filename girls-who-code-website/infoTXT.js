@@ -249,33 +249,33 @@ var info = [
       "mapIMG": "",
      
      "environment": {
-         "text": "Neoclassicism started in Europe but soon spread out to the Americas, as classical ideals served as models for many American aspects of art, architecture, and government. ",
+         "text": " Realism was a movement that developed in France but soon spread throughout Europe and soon to the Americas. There is urbanization as a result of the Industrial Revolution and new technological discoveries. Darwin’s theories were applied to the economic realm and imperialism changed the geopolitical map of the world. ",
          "img": "",
-         "caption": ""
+         "caption": " Realism was a movement that developed in France but soon spread throughout Europe and soon to the Americas, seen in Gustave Courbet’s Burial at Ornans as it was made in France"
      }, //environment
      
      "military/political": {
-         "text": "Greece and Rome served as models for political organization. They represented civilized societies and enlightened political systems. There were many Revolutions stemming from classical ideals of patriotism and civic virtue. Democracy, liberty, and sacrifice to the state grew due to the classical civilization serving as models.",
+         "text": " Darwin’s theories were applied to the economic realm and imperialism changed the geopolitical map of the world.",
          "img": "",
-         "caption": ""
+         "caption": "Honore Daumier’s Rue Transnonain depicts the actions of the government as they beat people in their sleep to keep them quiet. "
      }, //military/political"
      
       "intellectual/artistic": {
-         "text": "A readmirization of the classical cultures caused them to be thought as the pinnacle of society. The Enlightenment’s emphasis on rationality probably added to the praising of the classical cultures as they embodied Enlightenment ideals. Revolutions, Reason, Rationality, and Roman (The 4 R’s) ideas grew in importance. The excavation of Pompeii and Herculaneum further whetted the appetite for classicism. The ancient world became a focus of study. Johann Winckelmann, the first modern art historian, published books on art and said it to be the most perfect form of art made by man. Edward Gibbon published his book on ancient Rome in 1776. They both helped spread Neoclassicism. Neoclassic art Incorporated subjects and styles of ancient art painting sculpture and architecture was the most prominent manifestations of Neoclassicism. Art was rational, attention was paid to detail, there was often a grand theme with morals involved. Many classical elements were used and there was a bigger focus on the line and perspective. ",
+         "text": "Advances in the early 19th century reinforced the Enlightenment’s foundation on rationalism. Empiricism, the search for knowledge based on observation and direct experience, was embraced by the people. Positivism, a Western philosophical movement, shows the widespread faith in science. Positivists promoted science as the mind’s highest achievement and advocated a purely empirical approach nature society. They threw out religion and believed that knowledge came from science. Similar to empiricists and positives, realists argue that the only real things with things that they can see. The focus their attention on experiences of every life and disapproved of  historical and fictional subjects as they weren’t real, visible, or of the present. Charles Darwin published his book The Origin of Species in 1859. Herbert Spencer applied Darwin’s theory to the socioeconomic realm to justify racism and imperialism. They were also applied to capitalism. Ideas from the time were taken and put into art. The most famous artist was Gustave Courbet, who depicted menial labor and ordinary people to show that painters should only paint what they see. Realists depicted scenes of working class laborers and peasants on a scale and with earnestness and seriousness only reserved for grand history painting. Art was drab, common, and ordinary. Artists often used impasto, or visible brushstrokes. All classes and places were depicted. These characteristics can be seen in Gustave Courbet's The Stone Breakers. There was an interest in national and regional characteristics, folk costumes, and culture. The working class was glorified and associated with communism and socialism. Art becomes more commercial, with museums and commercial galleries. There is an art market because of capitalism, but artist become revolutionary and less mainstream. ",
          "img": "",
-         "caption": ""
+         "caption": "Art was drab, common, and ordinary. Artists often used impasto, or visible brushstrokes. All classes and places were depicted. These characteristics can be seen in Gustave Courbet's The Stone Breakers."
      }, //intellectual/artistic
      
      "religion": {
-         "text": "Religion lost much of its importance as a result of the Enlightenment’s ideas",
+         "text": "Religion decreases for science and rationality. It can not be seen, so it is not painted.",
          "img": "",
-         "caption": ""
+         "caption": "Religion decreases for science and rationality. It can not be seen, so it is not painted, as seen in Rosa Bonheur as it doesn’t have a religious subject. "
      }, //religion
      
      "economic/social": {
-         "text": "The classical cultures emphasized civic virtue, sacrifice, morality, patriotism, and liberty and became models during this period. The Grand Tour was fueling this interest in the classical cultures.",
+         "text": "Darwin’s theories of evolution are applied to economics for capitalism. Art becomes more commercial, with museums and commercial galleries. There is an art market because of capitalism, but artist become revolutionary and less mainstream. Karl Marx and Friedrich Engels publish The Communist Manifesto in 1848. It states that the workers will rise up and take control and overthrow capitalism. ",
          "img": "",
-         "caption": ""
+         "caption": "Ideas from the Communist Manifesto can be seen in Jean-Francois Millet’s The Gleaners as it celebrates the working class. "
      }  //economic/social
     },  //Realism
     
