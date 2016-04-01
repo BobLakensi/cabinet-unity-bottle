@@ -32,11 +32,11 @@ var info = [
     },  
     
     {"period": "Enlightenment",
-     "environment": "",
-     "military/political": "",
-     "intellectual/artistic": "",
-     "religion": "",
-     "economic/social": "",
+     "environment": "The Enlightenment started in Europe, with Isaac Newton and John Locke in Great Britain, but their ideas soon spread around the world. Ideas from the Enlightenment spread to the Americas, causing Revolutions there. There were also Enlightenment thinkers in the Americas, including Thomas Jefferson and Benjamin Franklin. The Industrialization caused colonization. The Europeans colonized for land and resources. ",
+     "military/political": "Enlightenment ideas spread to the Americas, sparking the American Revolution. John Locke’s ideas on right to life, liberty, and property and the government’s duty to protect those rights were ideas thought to be radical at the time and sparked stated many revolutions. The American Revolution influenced the French Revolution and other revolutions in the Americas. The Enlightenment's ideas also gave way to the Industrial Revolution, which led to ideas of European superiority and colonization. ",
+     "intellectual/artistic": "Rationality and critical thinking based on logic and science instead of faith became the core Enlightenment ideas. The Enlightenment stemmed from many ideas from the Scientific Revolution. Isaac Newton developed the scientific method and encouraged others to avoid metaphysics and the supernatural. This emphasis on tangible data and concrete experience became a major idea of the Enlightenment. Diderot organized the first encyclopedia, a book containing all human knowledge. Galileo developed the heliocentric theories and made advances in astronomy. Science became included in art, as seen in the realism and detail, natural landscape, focus on accurate anatomy, and the light of God being replaced by the light of science. Iron and the machine were improved upon, causing an increase in architecture and mass production. ",
+     "religion": "During this time, religion declines for science and philosophy. Ideas about people being able to change their destiny, they’re in control of it, and not God, was a big Enlightenment idea.  ",
+     "economic/social": "The Enlightenment led to the Industrial Revolution. Countries that industrialized gained wealth and capitalism became more popular. By the end of the 18th century, there was major economic change and new wealth from industrial manufacturing. People tried to use Enlightenment ideas to fix society, abolish slavery, and gain women’s rights. The Industrial Revolution caused urbanization, colonization, ideas of Social Darwinism and Manifest Destiny. ",
     },   
     
     {"period": "Neoclassical",
