@@ -121,7 +121,8 @@ function ce (elid, cid, mcid) {  //collapse element
     var el = document.getElementById(elid); //element
     var c = document.getElementById(cid);    // container 
     var mc = document.getElementById(mcid); //main content
-    var px = c.offsetWidth;
+    var leftpx = c.offsetWidth;
+    var toppx = c.offsetHeight;
     
     if (helper.sbStuff.sbID == elid){        
         if (helper.sbStuff.sbOpen){
@@ -142,7 +143,22 @@ function ce (elid, cid, mcid) {  //collapse element
             helper.sbStuff.sbOpen = true;
         }
     }
-}
+    
+    if (helper.tbStuff.tbID == elid){
+        if (helper.tbStuff.tbOpen){
+            c.style.transition = "top 0.5s ease-out 0s"
+            c.style.top = "-20px"
+            
+            helper.tbStuff.tbOpen = false;
+        } else if (!helper.tbStuff.tbOpen){
+            c.style.transition = "top 0.5s ease-out 0s"
+            c.style.top = "0px"
+            
+            helper.tbStuff.tbOpen = true;
+        }
+    }
+    
+}   //function ce
 
 var helper = {   
     sbStuff : { //side bar stuff
