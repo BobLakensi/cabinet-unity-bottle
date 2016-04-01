@@ -24,11 +24,11 @@ var info = [
     },
     
     {"period": "Rococo",
-     "environment": "",
-     "military/political": "",
-     "intellectual/artistic": "",
-     "religion": "",
-     "economic/social": "",
+     "environment": "France was the main home of Rococo art and architecture, although they were influenced by many things outside. Paris was the center of the Rococo style and culture. The American Revolution started in America and the Industrial Revolution began in England.",
+     "military/political": "The Rococo period is often called the frivolous last days of the French aristocracy. During the 1700’s, king Louis XIV ruled over France, but by the 1800’s, the monarchy was overthrown. He created a unified nation state with secure borders but the wars he fought bankrupted the country. The death of King Louis XIV in 1716 led to many changes in the French high society.  Revolutions in America influenced the French to revolt against their ruler. The 18th century also saw the Industrial Revolution, which started in England but soon spread throughout the world. A rise in capitalism fueled by the Industrial Revolution cause a gain in economic power which led to a gain in political power. Britain had the first democracy, but their government was corrupt. The Industrial Revolution led to political revolutions. Aristocrats were beheaded during the French Revolution (1789). The French assisted America in their revolution against the British. Nation states dominated Europe, religious wars were over, and Spain was in decline. Ideas from the Enlightenment also impacted Europe politically. ",
+     "intellectual/artistic": "The term Rococo derives from <i> rocaille</i>, meaning pebble, referring to the use of small stones and shells used to decorate interiors. The patrons of Rococo art and architecture were often wealthy, educated female aristocrats, which caused art to become more “feminine”. Sensuous themes were popular and they were extravagant to show wealth and status. Light colors, including pink, red, and pastel colors, were used following the ideas of sensuality and female patrons. Curvilinear lines, visible brushstrokes, and an outdoor setting were popular in Rococo art and architecture. The art was artificial and scenes of love and pleasure increased. ",
+     "religion": "King Louis XIV destroyed Protestantism in France, so Catholicism was more popular. Religion wasn’t a big focus of Rococo art or architecture. ",
+     "economic/social": "The warfare and fighting King Louix XIV got France into bankrupted the country. A rise in capitalism fueled by the Industrial Revolution cause a gain in economic power which led to a gain in political power. The death of King Louis XIV in 1715 led to many changes in the French high society. People socialized in salons, which led to the spread of information and arts. The middle class was growing and demanded political power. ",
     },  
     
     {"period": "Enlightenment",
