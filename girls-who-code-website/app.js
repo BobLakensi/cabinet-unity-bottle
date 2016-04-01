@@ -102,13 +102,19 @@ $( document ).ready(function() {
 //    $("#sbbIN").on("mousedown", helper.europe17to18.buttonSideBarMDsbbIN);
 
 */
-    populateContent("tc");
+    
+    populateContent("textContainer");  
     
 });
 
+var el;
 function populateContent (elid) {
-    var el = document.getElementsByClassName(elid);
-    
+     el = document.getElementsByClassName(elid);
+
+    for (var i = 0; i < el.length; i ++){
+        el[i].innerHTML = info[i].period + "</br>" 
+            + info[i].environment.text + "</br>";
+    }
 }
 
 var open = true;
