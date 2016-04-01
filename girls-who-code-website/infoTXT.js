@@ -226,8 +226,7 @@ var info = [
      }, //military/political"
      
       "intellectual/artistic": {
-         "text": "The Industrial Revolution caused a population boom and railroads spread throughout Europe and the Americas, transporting goods and people. New construction techniques had a major impact on architectural design and construction and engineering. The invention of photography revolutionized picture making. Jean-Jacques David became Napoleon’s official painter. Feeling and imagination was given priority over Neoclassical reason. Art explored the exotic, erotic, and fantastic in their art. Art used bright color and diagonals to express emotion and color. Edges were smudged and brush strokes energetic to look more dreamlike and fantastic, similar to Impressionism. The past was looked back to and were diffused into art. Romantic painters often chose landscapes as an ideal subject to to express the Romantic theme of of the soul unified with the natural world, transcendentalism. Transcendentalism was a philosophical and religious movement stemming from Harvard and was a reaction against the modern world and the industrial revolution. Landscapes were a respected genre and often had morals and was allegorical when depicted in art. In America, it was spearheaded by the Hudson River School. It was historical, political, and philosophical. Romantic architecture combines the old styles with modern materials and techniques. There was an appreciation for the past as the current was seen as bad because of the Industrial Revolution and nationalism to identify with the past ideals. The historical designs were thought to be of moral purity of the religious architecture of the middle ages. There was a respect for the handmade as everything during this time was mass produced in factories. 
- ",
+         "text": "The Industrial Revolution caused a population boom and railroads spread throughout Europe and the Americas, transporting goods and people. New construction techniques had a major impact on architectural design and construction and engineering. The invention of photography revolutionized picture making. Jean-Jacques David became Napoleon’s official painter. Feeling and imagination was given priority over Neoclassical reason. Art explored the exotic, erotic, and fantastic in their art. Art used bright color and diagonals to express emotion and color. Edges were smudged and brush strokes energetic to look more dreamlike and fantastic, similar to Impressionism. The past was looked back to and were diffused into art. Romantic painters often chose landscapes as an ideal subject to to express the Romantic theme of of the soul unified with the natural world, transcendentalism. Transcendentalism was a philosophical and religious movement stemming from Harvard and was a reaction against the modern world and the industrial revolution. Landscapes were a respected genre and often had morals and was allegorical when depicted in art. In America, it was spearheaded by the Hudson River School. It was historical, political, and philosophical. Romantic architecture combines the old styles with modern materials and techniques. There was an appreciation for the past as the current was seen as bad because of the Industrial Revolution and nationalism to identify with the past ideals. The historical designs were thought to be of moral purity of the religious architecture of the middle ages. There was a respect for the handmade as everything during this time was mass produced in factories. ",
          "img": "",
          "caption": "Art explored the exotic, erotic, and fantastic in their art, evident in Ingres’s  Grand Odalisque as it depicts these."
      }, //intellectual/artistic
@@ -283,33 +282,33 @@ var info = [
       "mapIMG": "",
      
      "environment": {
-         "text": "Neoclassicism started in Europe but soon spread out to the Americas, as classical ideals served as models for many American aspects of art, architecture, and government. ",
+         "text": "There is urbanization as a result of the Industrial Revolution and new technological discoveries.  Darwin’s theories were applied to the economic realm and imperialism changed the geopolitical map of the world.",
          "img": "",
-         "caption": ""
+         "caption": "There is urbanization as a result of the Industrial Revolution and new technological discoveries. This can be seen in Honore Daumier’s  Third Class Carriage as it depicts a train,  new invention of this time that helped urbanization."
      }, //environment
      
      "military/political": {
-         "text": "Greece and Rome served as models for political organization. They represented civilized societies and enlightened political systems. There were many Revolutions stemming from classical ideals of patriotism and civic virtue. Democracy, liberty, and sacrifice to the state grew due to the classical civilization serving as models.",
+         "text": " There were many revolutions during this time, including the Russian Revolution in 1918, the Chinese Revolution in 1949, and the Cuban Revolution in 1959. Darwin’s theories were applied to the economic realm and imperialism changed the geopolitical map of the world.",
          "img": "",
-         "caption": ""
+         "caption": "Darwin’s theories were applied to the economic realm and imperialism changed the geopolitical map of the world. This can be seen in Honore Daumier’s  Third Class Carriage as it depicts a train, a new invention of the time that was used in the process of imperialism. "
      }, //military/political"
      
       "intellectual/artistic": {
-         "text": "A readmirization of the classical cultures caused them to be thought as the pinnacle of society. The Enlightenment’s emphasis on rationality probably added to the praising of the classical cultures as they embodied Enlightenment ideals. Revolutions, Reason, Rationality, and Roman (The 4 R’s) ideas grew in importance. The excavation of Pompeii and Herculaneum further whetted the appetite for classicism. The ancient world became a focus of study. Johann Winckelmann, the first modern art historian, published books on art and said it to be the most perfect form of art made by man. Edward Gibbon published his book on ancient Rome in 1776. They both helped spread Neoclassicism. Neoclassic art Incorporated subjects and styles of ancient art painting sculpture and architecture was the most prominent manifestations of Neoclassicism. Art was rational, attention was paid to detail, there was often a grand theme with morals involved. Many classical elements were used and there was a bigger focus on the line and perspective. ",
+         "text": "Advances in the early 19th century reinforced the Enlightenment’s foundation on rationalism. Empiricism, the search for knowledge based on observation and direct experience, was embraced by the people. Positivism, a Western philosophical movement, shows the widespread faith in science. Positivists promoted science as the mind’s highest achievement and advocated a purely empirical approach nature society. They threw out religion and believed that knowledge came from science. Similar to empiricists and positives, realists argue that the only real things with things that they can see. The focus their attention on experiences of every life and disapproved of  historical and fictional subjects as they weren’t real, visible, or of the present. Charles Darwin published his book The Origin of Species in 1859. Herbert Spencer applied Darwin’s theory to the socioeconomic realm to justify racism and imperialism. They were also applied to capitalism. Art becomes more commercial, with museums and commercial galleries. There is an art market because of capitalism, but artist become revolutionary and less mainstream. There were showcases for rejected artists. Photography rose and became an art form protected under copyright laws. It also influenced painting styles. Modernist art breaks the rules of composition, subject, and form. Brushstrokes are visible, impasto/painterly. Less is more and art is used to reveal, not conceal. Photography is disliked by early artists as it takes away the art market from the painters. ",
          "img": "",
-         "caption": ""
+         "caption": "Modernist art breaks the rules of composition, subject, and form. Brushstrokes are visible, impasto/painterly. Less is more and art is used to reveal, not conceal, as seen in Edouard Manet’s Luncheon on Grass as it has many of these characteristics."
      }, //intellectual/artistic
      
      "religion": {
-         "text": "Religion lost much of its importance as a result of the Enlightenment’s ideas",
+         "text": "Religion decreases for science and rationality. It can not be seen, so it is not painted. ",
          "img": "",
-         "caption": ""
+         "caption": "Religion decreases for science and rationality. It can not be seen, so it is not painted. This can be seen in Rosa Bonheur The Horse Fair as it doesn’t depict a religious subject. "
      }, //religion
      
      "economic/social": {
-         "text": "The classical cultures emphasized civic virtue, sacrifice, morality, patriotism, and liberty and became models during this period. The Grand Tour was fueling this interest in the classical cultures.",
+         "text": "Darwin’s theories of evolution are applied to economics for capitalism. Art becomes more commercial, with museums and commercial galleries. There is an art market because of capitalism, but artist become revolutionary and less mainstream. Karl Marx and Friedrich Engels publish The Communist Manifesto in 1848. It states that the workers will rise up and take control and overthrow capitalism. The working class is celebrated as a result of Marx’s ideas. ",
          "img": "",
-         "caption": ""
+         "caption": "The working class is celebrated as a result of Marx’s ideas, as seen in Wilhelm Leibl;s Three Women in a Village Church as it celebrates the working class. "
      }  //economic/social
     },  //Early Modernism
     
