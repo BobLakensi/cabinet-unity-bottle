@@ -1,4 +1,4 @@
-.topBarContainer {
+#topBarContainer {
     background-color: skyblue;
     height: 80px;
     padding: 0;
@@ -9,7 +9,7 @@
     right: 0;
 }
 
-.topBarSubContainer {
+#topBarSubContainer {
     padding: 5px;
     margin: 5px;
 }

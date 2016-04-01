@@ -117,33 +117,44 @@ function populateContent (elid) {
     }
 }
 
-var open = true;
-function ce (elid, sbbcid, mcid) {
+function ce (elid, cid, mcid) {  //collapse element
     var el = document.getElementById(elid); //element
-    var c = document.getElementById(sbbcid);    //(sidebar) container
+    var c = document.getElementById(cid);    // container 
     var mc = document.getElementById(mcid); //main content
     var px = c.offsetWidth;
     
-    if (open){
-        c.style.transition = "left 0.5s ease-out 0s"
-        c.style.left = "-150px";
+    if (helper.sbStuff.sbID == elid){        
+        if (helper.sbStuff.sbOpen){
+            c.style.transition = "left 0.5s ease-out 0s"
+            c.style.left = "-150px";
 
-        mc.style.transition = "left 0.5s ease-out 0s"
-        mc.style.left = "30px"
-        
-        open = false;
-    } else if (!open){
-        c.style.transition = "left 0.5s ease-in 0s"
-        c.style.left = "0px";
-        
-        mc.style.transition = "left 0.5s ease-in 0s"
-        mc.style.left = "180px";       
-        
-        open = true;
+            mc.style.transition = "left 0.5s ease-out 0s"
+            mc.style.left = "30px"
+
+            helper.sbStuff.sbOpen = false;
+        } else if (!helper.sbStuff.sbOpen){
+            c.style.transition = "left 0.5s ease-in 0s"
+            c.style.left = "0px";
+
+            mc.style.transition = "left 0.5s ease-in 0s"
+            mc.style.left = "180px";       
+
+            helper.sbStuff.sbOpen = true;
+        }
     }
 }
 
-var helper = {    
+var helper = {   
+    sbStuff : { //side bar stuff
+        sbID: "sbbce",   //side bar button id 
+        sbOpen: true   //Side Bar open 
+    },  //side bar stuff
+    
+    tbStuff: {  //top bar stuff
+        tbID: "tbbce",    //top bar button id
+        tbOpen: true   //top bar open
+    },   //top bar stuff
+    
     // side bar button Mouse Over side bar button home
     buttonSideBarMOsbbHI: function () {
         //turn button sky blue when mouse over
