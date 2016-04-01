@@ -50,7 +50,7 @@ $( document ).ready(function() {
     $("#sbbHI").on("mouseleave", helper.buttonSideBarMLsbbHI);
     $("#sbbHI").on("mousedown", helper.buttonSideBarMDsbbHI);
     
-        
+    
     //side bar button Home inside its folder
     $("#sbbHO").on("mouseover", helper.buttonSideBarMOsbbHO);
     $("#sbbHO").on("mouseleave", helper.buttonSideBarMLsbbHO);
@@ -101,6 +101,27 @@ $( document ).ready(function() {
     $("#sbbIN").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbIN);
     $("#sbbIN").on("mousedown", helper.europe17to18.buttonSideBarMDsbbIN);
 });
+
+var open = true;
+function ce (id, sbbc) {
+    var el = document.getElementById(id);
+    var c = document.getElementById(sbbc);
+    var px = document.getElementById(sbbc).offsetWidth;
+    
+    if (open == true){
+        c.style.transition = "left 0.5s ease-out 0s"
+        c.style.left = "-150px";
+//        c.style.overflow = "hidden"
+        open = false;
+        console.log(open);
+    } else if (open == false){
+        c.style.transition = "left 0.5s ease-in 0s"
+        c.style.left = "0px";
+        open = true;
+        console.log(open);
+    }
+
+}
 
 var helper = {    
     // side bar button Mouse Over side bar button home
