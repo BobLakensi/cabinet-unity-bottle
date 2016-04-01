@@ -40,11 +40,11 @@ var info = [
     },   
     
     {"period": "Neoclassical",
-     "environment": "",
-     "military/political": "",
-     "intellectual/artistic": "",
-     "religion": "",
-     "economic/social": "",
+     "environment": "Neoclassicism started in Europe but soon spread out to the Americas, as classical ideals served as models for many American aspects of art, architecture, and government. ",
+     "military/political": "Greece and Rome served as models for political organization. They represented civilized societies and enlightened political systems. There were many Revolutions stemming from classical ideals of patriotism and civic virtue. Democracy, liberty, and sacrifice to the state grew due to the classical civilization serving as models.",
+     "intellectual/artistic": "A readmirization of the classical cultures caused them to be thought as the pinnacle of society. The Enlightenment’s emphasis on rationality probably added to the praising of the classical cultures as they embodied Enlightenment ideals. Revolutions, Reason, Rationality, and Roman (The 4 R’s) ideas grew in importance. The excavation of Pompeii and Herculaneum further whetted the appetite for classicism. The ancient world became a focus of study. Johann Winckelmann, the first modern art historian, published books on art and said it to be the most perfect form of art made by man. Edward Gibbon published his book on ancient Rome in 1776. They both helped spread Neoclassicism. Neoclassic art Incorporated subjects and styles of ancient art painting sculpture and architecture was the most prominent manifestations of Neoclassicism. Art was rational, attention was paid to detail, there was often a grand theme with morals involved. Many classical elements were used and there was a bigger focus on the line and perspective. ",
+     "religion": "Religion lost much of its importance as a result of the Enlightenment’s ideas",
+     "economic/social": "The classical cultures emphasized civic virtue, sacrifice, morality, patriotism, and liberty and became models during this period. The Grand Tour was fueling this interest in the classical cultures.",
     }
     
 ]
