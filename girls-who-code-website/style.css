@@ -21,7 +21,7 @@
 
 }
 
-.sideBarContainer {
+#sideBarContainer {
     background-color: lightgrey;
     position: absolute;
     position: fixed;
@@ -32,11 +32,11 @@
     
 }
 
-.sideBarSubContainer {
+#sideBarSubContainer {
 
 }
 
-.sideBarButtonSubContainer {
+#sideBarButtonSubContainer {
 
 }
 
@@ -51,7 +51,7 @@
 
 
 
-.mainContent {
+#mainContent {
     position: absolute;
     top: 80px;
     left: 180px;
