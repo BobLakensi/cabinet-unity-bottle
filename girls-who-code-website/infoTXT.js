@@ -316,31 +316,32 @@ var info = [
       "mapIMG": "",
      
      "environment": {
-         "text": "Neoclassicism started in Europe but soon spread out to the Americas, as classical ideals served as models for many American aspects of art, architecture, and government. ",
+         "text": "Photography originated in France, with the first practical photographic process developed there, but soon spread to the rest of Europe and the world. ",
          "img": "",
          "caption": ""
      }, //environment
      
      "military/political": {
-         "text": "Greece and Rome served as models for political organization. They represented civilized societies and enlightened political systems. There were many Revolutions stemming from classical ideals of patriotism and civic virtue. Democracy, liberty, and sacrifice to the state grew due to the classical civilization serving as models.",
+         "text": "Photography was also used for historical records, often depicting war scenes and propaganda for political purposes. ",
          "img": "",
          "caption": ""
      }, //military/political"
      
       "intellectual/artistic": {
-         "text": "A readmirization of the classical cultures caused them to be thought as the pinnacle of society. The Enlightenment’s emphasis on rationality probably added to the praising of the classical cultures as they embodied Enlightenment ideals. Revolutions, Reason, Rationality, and Roman (The 4 R’s) ideas grew in importance. The excavation of Pompeii and Herculaneum further whetted the appetite for classicism. The ancient world became a focus of study. Johann Winckelmann, the first modern art historian, published books on art and said it to be the most perfect form of art made by man. Edward Gibbon published his book on ancient Rome in 1776. They both helped spread Neoclassicism. Neoclassic art Incorporated subjects and styles of ancient art painting sculpture and architecture was the most prominent manifestations of Neoclassicism. Art was rational, attention was paid to detail, there was often a grand theme with morals involved. Many classical elements were used and there was a bigger focus on the line and perspective. ",
+         "text": "Photography comes from “photo” meaning light and “graphos” which means to write.The invention of the camera in the mid 19th century followed by the art of photography had immense consequence for the modern experience. Louis-Jacques-Mande Daguerre and Henry Fox Talbot announced the first practical photographic process in 1839.In 1862, the French court ruled photography as a form of art protected under copyright laws. It challenged the traditional ways of depicting art, but some artists welcomed it. Photography challenged painting. Photography was also used in paint as ways to render the images in the painting or a cheaper and faster way to reproduce the painting. During this time, artistic patronage shifter from the elite few to a broader range of people. It was soon used to influence modern life and changes to communication and information management. Sequential photos of movement became the forerunners to modern cinema. Photography was faster and cheaper to make than paintings and depicted 3d objects on a 2d surface. ",
          "img": "",
          "caption": ""
      }, //intellectual/artistic
      
      "religion": {
-         "text": "Religion lost much of its importance as a result of the Enlightenment’s ideas",
+         "text": "Religion is in decline for science. 
+",
          "img": "",
          "caption": ""
      }, //religion
      
      "economic/social": {
-         "text": "The classical cultures emphasized civic virtue, sacrifice, morality, patriotism, and liberty and became models during this period. The Grand Tour was fueling this interest in the classical cultures.",
+         "text": "The growing and increasingly powerful middle class were the main patrons of art. Art becomes more commercial. ",
          "img": "",
          "caption": ""
      }  //economic/social},  
