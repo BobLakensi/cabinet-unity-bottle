@@ -189,6 +189,14 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
 
         elm2.style.transition = direction + time + timingFunction +  delay;
         elm2.style.top = e2_px;
+        
+        time = "";
+        direction = "";
+        timingFunction = "";
+        delay = "";
+        container_px = "";
+        content_px = "";
+        e2_px = "";
     }
     
 }   //function ce
