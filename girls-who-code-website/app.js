@@ -149,13 +149,13 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
     if (helper.tbStuff.tbID == elid){
         if (helper.tbStuff.tbOpen){
             c.style.transition = "top 0.5s ease-out 0s"
-            c.style.top = "-20px"
+            c.style.top = "-50px"
             
             mc.style.transition = "top 0.5s ease-out 0s";
-            mc.style.top = "0px";
+            mc.style.top = "30px";
             
             elm2.style.transition = "top 0.5s ease-out 0s";
-            elm2.style.top = "0px";
+            elm2.style.top = "30px";
             
             helper.tbStuff.tbOpen = false;
         } else if (!helper.tbStuff.tbOpen){
