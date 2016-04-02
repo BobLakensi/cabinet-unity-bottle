@@ -127,23 +127,36 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
     var leftpx = c.offsetWidth;
     var toppx = c.offsetHeight;
     
-    var time = "0.2s ";
-    var direction = "left ";
+    var time, direction, timingFunction, delay;
+//    var time = "0.2s ";
+//    var direction = "left ";
+//    var timingFunction = "ease-out ";
+//    var delay = "0s"
     
     if (helper.sbStuff.sbID == elid){        
         if (helper.sbStuff.sbOpen){
-            c.style.transition = "left " + time + "ease-out 0s";
+            time = "0.2s ";
+            direction = "left ";
+            timingFunction = "ease-out ";
+            delay = "0s"
+            
+            c.style.transition = direction + time + timingFunction + delay;
             c.style.left = "-150px";
 
-            mc.style.transition = "left " + time + "ease-out 0s";
+            mc.style.transition = direction + time + timingFunction + delay;
             mc.style.left = "30px"
 
             helper.sbStuff.sbOpen = false;
         } else if (!helper.sbStuff.sbOpen){
-            c.style.transition = "left " + time + "ease-in 0s";
+            time = "0.2s ";
+            direction = "left ";
+            timingFunction = "ease-in ";
+            delay = "0s"
+            
+            c.style.transition = direction + time + "ease-in 0s";
             c.style.left = "0px";
 
-            mc.style.transition = "left " + time + "ease-in 0s";
+            mc.style.transition = direction + time + "ease-in 0s";
             mc.style.left = "180px";       
 
             helper.sbStuff.sbOpen = true;
