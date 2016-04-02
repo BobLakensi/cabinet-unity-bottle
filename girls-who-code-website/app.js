@@ -127,7 +127,7 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
     var leftpx = c.offsetWidth;
     var toppx = c.offsetHeight;
     
-    var time, direction, timingFunction, delay, container_px, content_px;
+    var time, direction, timingFunction, delay, container_px, content_px, e2_px;
 
     
     if (helper.sbStuff.sbID == elid){        
@@ -160,28 +160,35 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
     
     if (helper.tbStuff.tbID == elid){
         if (helper.tbStuff.tbOpen){
-            c.style.transition = "top 0.5s ease-out 0s";
-            c.style.top = "-50px"
+            time = "0.2s ";
+            direction = "top ";
+            timingFunction = "ease-out ";
+            delay = "0s";
+            container_px = "-50px";
+            content_px = "30px";
+            e2_px = "30px";
             
-            mc.style.transition = "top 0.5s ease-out 0s";
-            mc.style.top = "30px";
-            
-            elm2.style.transition = "top 0.5s ease-out 0s";
-            elm2.style.top = "30px";
-            
-            helper.tbStuff.tbOpen = false;
+            helper.tbStuff.tbOpen = false; 
         } else if (!helper.tbStuff.tbOpen){
-            c.style.transition = "top 0.5s ease-in 0s"
-            c.style.top = "0px"
-            
-            mc.style.transition = "top 0.5s ease-in 0s";
-            mc.style.top = "80px";
-            
-            elm2.style.transition = "top 0.5s ease-in 0s";
-            elm2.style.top = "80px";
+            time = "0.2s ";
+            direction = "top ";
+            timingFunction = "ease-in ";
+            delay = "0s";
+            container_px = "0px";
+            content_px = "80px";
+            e2_px = "80px";
             
             helper.tbStuff.tbOpen = true;
         }
+        
+        c.style.transition = direction + time + timingFunction +  delay;
+        c.style.top = container_px;
+
+        mc.style.transition = direction + time + timingFunction +  delay;
+        mc.style.top = content_px;
+
+        elm2.style.transition = direction + time + timingFunction +  delay;
+        elm2.style.top = e2_px;
     }
     
 }   //function ce
