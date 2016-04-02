@@ -117,10 +117,12 @@ function populateContent (elid) {
     }
 }
 
-function ce (elid, cid, mcid) {  //collapse element
+function ce (elid, cid, mcid, elm2id) {  //collapse element
     var el = document.getElementById(elid); //element
     var c = document.getElementById(cid);    // container 
     var mc = document.getElementById(mcid); //main content
+    var elm2 = document.getElementById(elm2id); //element to move 2
+    
     var leftpx = c.offsetWidth;
     var toppx = c.offsetHeight;
     
@@ -149,10 +151,16 @@ function ce (elid, cid, mcid) {  //collapse element
             c.style.transition = "top 0.5s ease-out 0s"
             c.style.top = "-20px"
             
+            mc.style.transition = "top 0.5s ease-out 0s";
+            mc.style.top = "0px";
+            
             helper.tbStuff.tbOpen = false;
         } else if (!helper.tbStuff.tbOpen){
-            c.style.transition = "top 0.5s ease-out 0s"
+            c.style.transition = "top 0.5s ease-in 0s"
             c.style.top = "0px"
+            
+            mc.style.transition = "top 0.5s ease-in 0s";
+            mc.style.top = "80px";
             
             helper.tbStuff.tbOpen = true;
         }
