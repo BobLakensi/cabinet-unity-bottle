@@ -137,13 +137,7 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
             timingFunction = "ease-out ";
             delay = "0s"
             container_px = "-150px"
-            content_px = "30px"
-            
-            c.style.transition = direction + time + timingFunction + delay;
-            c.style.left = container_px;
-
-            mc.style.transition = direction + time + timingFunction + delay;
-            mc.style.left = content_px;
+            content_px = "30px";
 
             helper.sbStuff.sbOpen = false;
         } else if (!helper.sbStuff.sbOpen){
@@ -153,16 +147,16 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
             delay = "0s"
             container_px = "0px"
             content_px = "180px"
-            
-            c.style.transition = direction + time + timingFunction + delay;
-            c.style.left = container_px;
-
-            mc.style.transition = direction + time + timingFunction + delay;
-            mc.style.left = content_px;      
 
             helper.sbStuff.sbOpen = true;
-        }
-    }
+        }   // else if sbStiff.isOpen
+        
+        c.style.transition = direction + time + timingFunction + delay;
+        c.style.left = container_px;
+
+        mc.style.transition = direction + time + timingFunction + delay;
+        mc.style.left = content_px;  
+    }   // if side bar is side bar
     
     if (helper.tbStuff.tbID == elid){
         if (helper.tbStuff.tbOpen){
