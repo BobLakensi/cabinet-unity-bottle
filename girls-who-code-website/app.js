@@ -154,6 +154,9 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
             mc.style.transition = "top 0.5s ease-out 0s";
             mc.style.top = "0px";
             
+            elm2.style.transition = "top 0.5s ease-out 0s";
+            elm2.style.top = "0px";
+            
             helper.tbStuff.tbOpen = false;
         } else if (!helper.tbStuff.tbOpen){
             c.style.transition = "top 0.5s ease-in 0s"
@@ -161,6 +164,9 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
             
             mc.style.transition = "top 0.5s ease-in 0s";
             mc.style.top = "80px";
+            
+            elm2.style.transition = "top 0.5s ease-in 0s";
+            elm2.style.top = "80px";
             
             helper.tbStuff.tbOpen = true;
         }
