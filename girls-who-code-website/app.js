@@ -127,11 +127,8 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
     var leftpx = c.offsetWidth;
     var toppx = c.offsetHeight;
     
-    var time, direction, timingFunction, delay;
-//    var time = "0.2s ";
-//    var direction = "left ";
-//    var timingFunction = "ease-out ";
-//    var delay = "0s"
+    var time, direction, timingFunction, delay, container_px, content_px;
+
     
     if (helper.sbStuff.sbID == elid){        
         if (helper.sbStuff.sbOpen){
@@ -139,12 +136,14 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
             direction = "left ";
             timingFunction = "ease-out ";
             delay = "0s"
+            container_px = "-150px"
+            content_px = "30px"
             
             c.style.transition = direction + time + timingFunction + delay;
-            c.style.left = "-150px";
+            c.style.left = container_px;
 
             mc.style.transition = direction + time + timingFunction + delay;
-            mc.style.left = "30px"
+            mc.style.left = content_px;
 
             helper.sbStuff.sbOpen = false;
         } else if (!helper.sbStuff.sbOpen){
@@ -152,12 +151,14 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
             direction = "left ";
             timingFunction = "ease-in ";
             delay = "0s"
+            container_px = "0px"
+            content_px = "180px"
             
-            c.style.transition = direction + time + "ease-in 0s";
-            c.style.left = "0px";
+            c.style.transition = direction + time + timingFunction + delay;
+            c.style.left = container_px;
 
-            mc.style.transition = direction + time + "ease-in 0s";
-            mc.style.left = "180px";       
+            mc.style.transition = direction + time + timingFunction + delay;
+            mc.style.left = content_px;      
 
             helper.sbStuff.sbOpen = true;
         }
