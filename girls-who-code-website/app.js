@@ -108,6 +108,7 @@ $( document ).ready(function() {
 });
 
 var el;
+
 function populateContent (elid) {
      el = document.getElementsByClassName(elid);
 
@@ -126,20 +127,23 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
     var leftpx = c.offsetWidth;
     var toppx = c.offsetHeight;
     
+    var time = "0.2s ";
+    var direction = "left ";
+    
     if (helper.sbStuff.sbID == elid){        
         if (helper.sbStuff.sbOpen){
-            c.style.transition = "left 0.5s ease-out 0s"
+            c.style.transition = "left " + time + "ease-out 0s";
             c.style.left = "-150px";
 
-            mc.style.transition = "left 0.5s ease-out 0s"
+            mc.style.transition = "left " + time + "ease-out 0s";
             mc.style.left = "30px"
 
             helper.sbStuff.sbOpen = false;
         } else if (!helper.sbStuff.sbOpen){
-            c.style.transition = "left 0.5s ease-in 0s"
+            c.style.transition = "left " + time + "ease-in 0s";
             c.style.left = "0px";
 
-            mc.style.transition = "left 0.5s ease-in 0s"
+            mc.style.transition = "left " + time + "ease-in 0s";
             mc.style.left = "180px";       
 
             helper.sbStuff.sbOpen = true;
@@ -148,7 +152,7 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
     
     if (helper.tbStuff.tbID == elid){
         if (helper.tbStuff.tbOpen){
-            c.style.transition = "top 0.5s ease-out 0s"
+            c.style.transition = "top 0.5s ease-out 0s";
             c.style.top = "-50px"
             
             mc.style.transition = "top 0.5s ease-out 0s";
@@ -173,6 +177,10 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
     }
     
 }   //function ce
+
+window.onscroll = function (e) {
+    ce('tbbce', 'topBarContainer', 'mainContent' , 'sideBarContainer');
+}
 
 var helper = {   
     sbStuff : { //side bar stuff

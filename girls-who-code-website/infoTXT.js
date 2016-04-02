@@ -242,7 +242,7 @@ var info = [
          "img": "",
          "caption": "Although England was the first to abolish slavery, the African Slave Trade was still prominent. This can be seen in Turner’s The Slave Ship as it depicts slaves and the slave trade."
      }  //economic/social},  
-    },//Romaniticism
+    },  //Romaniticism
     
     {"period": "Realism",
       "mapIMG": "",
