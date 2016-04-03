@@ -386,31 +386,31 @@ var info = [
      "environment": {
          "text": "Post-Impressionism was based off Impressionism from Paris but itself was throughout Europe, from France to the Netherlands. Darwin’s theories were applied to the economic realm and imperialism changed the geopolitical map of the world.",
          "img": "",
-         "caption": "Napoleon III ordered Paris rebuilt, with construction starting in 1852 supervised by Baron Georges Haussmann, as seen in Gustave Caillebotte’s Paris: A Rainy Day as it shows the new modifications to the city."
+         "caption": "Post-Impressionism was based off Impressionism from Paris but itself was throughout Europe, from France to the Netherlands. This can be seen in Vincent Van Gogh’s Night Cafe as it was made in the Netherlands."
      }, //environment
      
      "military/political": {
          "text": "The Western developments of the early 19th century, including industrialization urbanization and increased political interaction worldwide, matured during the late 18th century. Darwin’s theories were applied to the economic realm and imperialism changed the geopolitical map of the world.",
          "img": "",
-         "caption": "The Western developments of the early 19th century, including industrialization urbanization and increased political interaction worldwide, matured during the late 18th century. This can be seen in Claude Monet’s Saint-Lazare Train Station as it shows the industrialization of Paris."
+         "caption": "Darwin’s theories were applied to the economic realm and imperialism changed the geopolitical map of the world, seen in Where Do We Come From? Who Are We? Where Are We Going? By Paul Gauguin as it was made in the French Colony Tahiti. "
      }, //military/political"
      
       "intellectual/artistic": {
          "text": "Charles Darwin published his book The Origin of Species in 1859. Herbert Spencer applied Darwin’s theory to the socioeconomic realm to justify racism and imperialism. They were also applied to capitalism. Karl Marx and Friedrich Engels publish The Communist Manifesto in 1848. Their goal was for the workers to rise up and take control and overthrow capitalism. The rise of the urban working class was fundamental to the ideas of Marx and Engles. This period has been called the Second Industrial revolution, as the discoveries in the First paved way for the invention of the radio, electric light, telephone, and the car. Art markets expanded and the venues for the exhibition of art increased. Art exhibition gave artists alternatives to the Salon to express their ast and became grounds for the development of new art forms and styles. By the 1880s, most accepted Impressionists as serious artists, but they were soon seen as neglecting the elements of traditional painting. Post-Impressionism has it roots in Impressionism. Artists were more systematically examining the properties of line, pattern, form, and color. ",
          "img": "",
-         "caption": " Scientific studies of light and the invention of chemically synthesised pigments increased artist's’ sensitivity to color and allowed for new colors to be used. This scientific study of light can be seen in Claude Monet’s Rouen Cathedral: The Portal (in Sun) as it uses these new discoveries in light. "
+         "caption": "Artists were more systematically examining the properties of line, pattern, form, and color. These characteristics can be seen in Paul Cezanne’s Mont Sainte-Victoire. "
      }, //intellectual/artistic
      
      "religion": {
          "text": "Religion is in decline. ",
          "img": "",
-         "caption": "Religion is in decline. This can be seen in Berthe Morisot’s Villa at the Seaside as it does not have a religious subject. "
+         "caption": " Religion is in decline, evident in Vincent Van Gogh’s Starry Night as it neglects the church. "
      }, //religion
      
      "economic/social": {
          "text": "Art markets expanded and the venues for the exhibition of art increased. The Western developments of the early 19th century, including industrialization urbanization and increased economic interaction worldwide, matured during the late 18th century. Population shift from the rural to urban was partially because of the relocated urban centers expanding agricultural enterprises that squeezed smaller property owners out. Work opportunities were greater in the cities and health and living conditions improved there as well. ",
          "img": "",
-         "caption": "Art markets expanded and the venues for the exhibition of art increased, evident in Pierre-Agueste Renoir's Le Moulin de la Galette as it was placed in an art exhibition."
+         "caption": "Art markets expanded and the venues for the exhibition of art increased. This can be seen in Paul Gauguin’s Where Do We Come From? Who Are We? Where Are We Going? As it was placed in an art gallery. "
      }  //economic/social},  
     }   //Post-Impressionism
     
