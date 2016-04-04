@@ -100,7 +100,6 @@ $( document ).ready(function() {
 //    $("#sbbIN").on("mouseover", helper.europe17to18.buttonSideBarMOsbbIN);
 //    $("#sbbIN").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbIN);
 //    $("#sbbIN").on("mousedown", helper.europe17to18.buttonSideBarMDsbbIN);
-
 */
     
     populateContent("textContainer");  
@@ -118,7 +117,7 @@ function populateContent (elid) {
     }
 }
 
-function ce (elid, cid, mcid, elm2id) {  //collapse element
+function ce (elid, cid, mcid, elm2id, tbDirection, isScrolling) {  //collapse element
     var el = document.getElementById(elid); //element
     var c = document.getElementById(cid);    // container 
     var mc = document.getElementById(mcid); //main content
@@ -129,7 +128,6 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
     
     var time, direction, timingFunction, delay, container_px, content_px, e2_px;
 
-    
     if (helper.sbStuff.sbID == elid){        
         if (helper.sbStuff.sbOpen){
             time = "0.2s ";
@@ -158,8 +156,10 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
         mc.style.left = content_px;  
     }   // if side bar is side bar
     
-    if (helper.tbStuff.tbID == elid){
-        if (helper.tbStuff.tbOpen){
+    if (helper.tbStuff.tbID == elid || tbDirection == "collapse"){
+        if (!helper.tbStuff.tbOpen){
+            console.log("is closed")
+            
             time = "0.2s ";
             direction = "top ";
             timingFunction = "ease-out ";
@@ -168,8 +168,10 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
             content_px = "30px";
             e2_px = "30px";
             
-            helper.tbStuff.tbOpen = false; 
-        } else if (!helper.tbStuff.tbOpen){
+            helper.tbStuff.tbOpen = true; 
+        } else if (helper.tbStuff.tbOpen || tbDirection == "expand"){
+            console.log("is open")
+            
             time = "0.2s ";
             direction = "top ";
             timingFunction = "ease-in ";
@@ -178,32 +180,48 @@ function ce (elid, cid, mcid, elm2id) {  //collapse element
             content_px = "80px";
             e2_px = "80px";
             
-            helper.tbStuff.tbOpen = true;
+            helper.tbStuff.tbOpen = false;
+        }   //if tob bar is open/closed
+                
+        if (!isScrolling){            
+            c.style.transition = direction + time + timingFunction +  delay;
+            c.style.top = container_px;
+
+            mc.style.transition = direction + time + timingFunction +  delay;
+            mc.style.top = content_px;
+
+            elm2.style.transition = direction + time + timingFunction +  delay;
+            elm2.style.top = e2_px;
+        } else if (isScrolling){
+            if (helper.tbStuff.tbOpen){
+                c.style.transition = direction + time + timingFunction +  delay;
+                c.style.top = container_px;
+
+                mc.style.transition = direction + time + timingFunction +  delay;
+                mc.style.top = content_px;
+
+                elm2.style.transition = direction + time + timingFunction +  delay;
+                elm2.style.top = e2_px;
+            }
         }
-        
-        c.style.transition = direction + time + timingFunction +  delay;
-        c.style.top = container_px;
+    }   //if top bar
 
-        mc.style.transition = direction + time + timingFunction +  delay;
-        mc.style.top = content_px;
-
-        elm2.style.transition = direction + time + timingFunction +  delay;
-        elm2.style.top = e2_px;
-        
-        time = "";
-        direction = "";
-        timingFunction = "";
-        delay = "";
-        container_px = "";
-        content_px = "";
-        e2_px = "";
-    }
-    
 }   //function ce
 
-window.onscroll = function (e) {
-    ce('tbbce', 'topBarContainer', 'mainContent' , 'sideBarContainer');
-}
+//window.onscroll = function (e) {
+//    ce('tbbce', 'topBarContainer', 'mainContent' , 'sideBarContainer', );
+//}
+
+var lastScrollTop = 0;
+document.addEventListener("scroll", function(){ 
+   var st = window.pageYOffset || document.documentElement.scrollTop; 
+   if (st > lastScrollTop){
+       ce('tbbce', 'topBarContainer', 'mainContent' , 'sideBarContainer', "collapse", true );
+   } else {
+       ce('tbbce', 'topBarContainer', 'mainContent' , 'sideBarContainer', "expand", true );
+   }
+   lastScrollTop = st;
+}, false);
 
 var helper = {   
     sbStuff : { //side bar stuff
@@ -213,7 +231,8 @@ var helper = {
     
     tbStuff: {  //top bar stuff
         tbID: "tbbce",    //top bar button id
-        tbOpen: true   //top bar open
+        tbOpen: true,   //top bar open
+        canMovefScroll: true    //can move from scroll
     },   //top bar stuff
     
     // side bar button Mouse Over side bar button home
@@ -421,4 +440,3 @@ var helper = {
         
      }   //Europe 17 to 18
 }   //helper
-
