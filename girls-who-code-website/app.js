@@ -149,16 +149,19 @@ function ce (elid, cid, mcid, elm2id, tbDirection, isScrolling) {  //collapse el
             helper.sbStuff.sbOpen = true;
         }   // else if sbStiff.isOpen
         
-        c.style.transition = direction + time + timingFunction + delay;
-        c.style.left = container_px;
+        helper.sbStuff.animate(c, mc, container_px, content_px, direction, time, timingFunction, delay);
+        
 
-        mc.style.transition = direction + time + timingFunction + delay;
-        mc.style.left = content_px;  
+        // c.style.transition = direction + time + timingFunction + delay;
+        // c.style.left = container_px;
+
+        // mc.style.transition = direction + time + timingFunction + delay;
+        // mc.style.left = content_px;  
     }   // if side bar is side bar
     
     if (helper.tbStuff.tbID == elid || tbDirection == "collapse"){
         if (!helper.tbStuff.tbOpen){
-            console.log("is closed")
+            console.log("is closed");
             
             time = "0.2s ";
             direction = "top ";
@@ -169,6 +172,7 @@ function ce (elid, cid, mcid, elm2id, tbDirection, isScrolling) {  //collapse el
             e2_px = "30px";
             
             helper.tbStuff.tbOpen = true; 
+            helper.tbStuff.canMovefScroll = false;
         } else if (helper.tbStuff.tbOpen || tbDirection == "expand"){
             console.log("is open")
             
@@ -181,27 +185,15 @@ function ce (elid, cid, mcid, elm2id, tbDirection, isScrolling) {  //collapse el
             e2_px = "80px";
             
             helper.tbStuff.tbOpen = false;
+            helper.tbStuff.canMovefScroll = true;
         }   //if tob bar is open/closed
                 
-        if (!isScrolling){            
-            c.style.transition = direction + time + timingFunction +  delay;
-            c.style.top = container_px;
-
-            mc.style.transition = direction + time + timingFunction +  delay;
-            mc.style.top = content_px;
-
-            elm2.style.transition = direction + time + timingFunction +  delay;
-            elm2.style.top = e2_px;
+        if (!isScrolling){      
+            helper.tbStuff.animate(c, mc, elm2, container_px, content_px, e2_px, direction, time, timingFunction, delay);
         } else if (isScrolling){
-            if (helper.tbStuff.tbOpen){
-                c.style.transition = direction + time + timingFunction +  delay;
-                c.style.top = container_px;
+            if (helper.tbStuff.canMovefScroll){
+                helper.tbStuff.animate(c, mc, elm2, container_px, content_px, e2_px, direction, time, timingFunction, delay);
 
-                mc.style.transition = direction + time + timingFunction +  delay;
-                mc.style.top = content_px;
-
-                elm2.style.transition = direction + time + timingFunction +  delay;
-                elm2.style.top = e2_px;
             }
         }
     }   //if top bar
@@ -226,13 +218,34 @@ document.addEventListener("scroll", function(){
 var helper = {   
     sbStuff : { //side bar stuff
         sbID: "sbbce",   //side bar button id 
-        sbOpen: true   //Side Bar open 
+        sbOpen: true,   //Side Bar open 
+        
+        animate: function (c, mc, container_px, content_px, direction, time, timingFunction, delay) {
+            c.style.transition = direction + time + timingFunction +  delay;
+            c.style.left = container_px;
+
+            mc.style.transition = direction + time + timingFunction +  delay;
+            mc.style.left = content_px;
+        }
     },  //side bar stuff
     
     tbStuff: {  //top bar stuff
         tbID: "tbbce",    //top bar button id
-        tbOpen: true,   //top bar open
-        canMovefScroll: true    //can move from scroll
+        tbOpen: false,   //top bar open
+        canMovefScroll: true,    //can move from scroll
+        
+        animate: function (c, mc, elm2, container_px, content_px, e2_px, direction, time, timingFunction, delay) {
+            c.style.transition = direction + time + timingFunction +  delay;
+            c.style.top = container_px;
+
+            mc.style.transition = direction + time + timingFunction +  delay;
+            mc.style.top = content_px;
+
+            elm2.style.transition = direction + time + timingFunction +  delay;
+            elm2.style.top = e2_px;  
+     
+        }
+        
     },   //top bar stuff
     
     // side bar button Mouse Over side bar button home
