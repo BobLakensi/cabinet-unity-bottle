@@ -150,19 +150,10 @@ function ce (elid, cid, mcid, elm2id, tbDirection, isScrolling) {  //collapse el
         }   // else if sbStiff.isOpen
         
         helper.sbStuff.animate(c, mc, container_px, content_px, direction, time, timingFunction, delay);
-        
-
-        // c.style.transition = direction + time + timingFunction + delay;
-        // c.style.left = container_px;
-
-        // mc.style.transition = direction + time + timingFunction + delay;
-        // mc.style.left = content_px;  
     }   // if side bar is side bar
     
-    if (helper.tbStuff.tbID == elid || tbDirection == "collapse"){
-        if (!helper.tbStuff.tbOpen){
-            console.log("is closed");
-            
+    if (helper.tbStuff.tbID == elid){
+        if (!helper.tbStuff.tbOpen || tbDirection == "up"){    //closed
             time = "0.2s ";
             direction = "top ";
             timingFunction = "ease-out ";
@@ -173,9 +164,7 @@ function ce (elid, cid, mcid, elm2id, tbDirection, isScrolling) {  //collapse el
             
             helper.tbStuff.tbOpen = true; 
             helper.tbStuff.canMovefScroll = false;
-        } else if (helper.tbStuff.tbOpen || tbDirection == "expand"){
-            console.log("is open")
-            
+        } else if (helper.tbStuff.tbOpen || tbDirection == "down"){   //open
             time = "0.2s ";
             direction = "top ";
             timingFunction = "ease-in ";
@@ -187,30 +176,23 @@ function ce (elid, cid, mcid, elm2id, tbDirection, isScrolling) {  //collapse el
             helper.tbStuff.tbOpen = false;
             helper.tbStuff.canMovefScroll = true;
         }   //if tob bar is open/closed
-                
-        if (!isScrolling){      
-            helper.tbStuff.animate(c, mc, elm2, container_px, content_px, e2_px, direction, time, timingFunction, delay);
-        } else if (isScrolling){
-            if (helper.tbStuff.canMovefScroll){
-                helper.tbStuff.animate(c, mc, elm2, container_px, content_px, e2_px, direction, time, timingFunction, delay);
-
-            }
-        }
+        
+        helper.tbStuff.animate(c, mc, elm2, container_px, content_px, e2_px, direction, time, timingFunction, delay);
     }   //if top bar
 
 }   //function ce
-
-//window.onscroll = function (e) {
-//    ce('tbbce', 'topBarContainer', 'mainContent' , 'sideBarContainer', );
-//}
 
 var lastScrollTop = 0;
 document.addEventListener("scroll", function(){ 
    var st = window.pageYOffset || document.documentElement.scrollTop; 
    if (st > lastScrollTop){
-       ce('tbbce', 'topBarContainer', 'mainContent' , 'sideBarContainer', "collapse", true );
+       console.log("down", st)
+       ce('tbbce', 'topBarContainer', 'mainContent' , 'sideBarContainer', "down", true );
    } else {
-       ce('tbbce', 'topBarContainer', 'mainContent' , 'sideBarContainer', "expand", true );
+       console.log("up", st)
+       if (st < 1250){
+            ce('tbbce', 'topBarContainer', 'mainContent' , 'sideBarContainer', "up", true );
+       }
    }
    lastScrollTop = st;
 }, false);
