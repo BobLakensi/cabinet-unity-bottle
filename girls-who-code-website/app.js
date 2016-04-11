@@ -34,73 +34,81 @@
 // x.buttonOnClick()
 
 
+function onClick (){
+    var el = $(this);
+    
+    console.log(el)
+}
+
 $( document ).ready(function() {
-   /* //make sure document is ready
+ //make sure document is ready
     console.log("ready");
     
-            // new SBB( "#sbbHI" ).el.onmouseover = x.setBg1;    
-    //$("#sbbHI").on("mouseover", helper.buttonSideBarMOsbbHI);
+    $(".buttonSideBar").on("click", onClick);
+    
+    // new SBB( "#sbbHI" ).el.onmouseover = x.setBg1;    
+    // $("#sbbHI").on("mouseover", helper.buttonSideBarMOsbbHI);
     
     // $("#sbbHI").on("mouseleave", helper.buttonSideBarMLsbbHI);
     // new SBBC( "#sbbHI" ).prepEl();
-    //$("#sbbHI").on("mousedown", helper.buttonSideBarMDsbbHI); 
+    // $("#sbbHI").on("mousedown", helper.buttonSideBarMDsbbHI); 
     
-//    //side bar button Home outside its folder
-//    $("#sbbHI").on("mouseover", helper.buttonSideBarMOsbbHI);
-//    $("#sbbHI").on("mouseleave", helper.buttonSideBarMLsbbHI);
-//    $("#sbbHI").on("mousedown", helper.buttonSideBarMDsbbHI);
-//    
-//    
-//    //side bar button Home inside its folder
-//    $("#sbbHO").on("mouseover", helper.buttonSideBarMOsbbHO);
-//    $("#sbbHO").on("mouseleave", helper.buttonSideBarMLsbbHO);
-//    $("#sbbHO").on("mousedown", helper.buttonSideBarMDsbbHO);
-//    
-//    //side bar button North America
-//    $("#sbbNA").on("mouseover", helper.nativeAmericas.buttonSideBarMOsbbNA);
-//    $("#sbbNA").on("mouseleave", helper.nativeAmericas.buttonSideBarMLsbbNA);
-//    $("#sbbNA").on("mousedown", helper.nativeAmericas.buttonSideBarMDsbbNA);
-//    
-//    //side bar button Info South America
-//    $("#sbbISA").on("mouseover", helper.nativeAmericas.buttonSideBarMOsbbISA);
-//    $("#sbbISA").on("mouseleave", helper.nativeAmericas.buttonSideBarMLsbbISA);
-//    $("#sbbISA").on("mousedown", helper.nativeAmericas.buttonSideBarMDsbbISA);    
-//
-//    //side bar button Info Inkas
-//    $("#sbbII").on("mouseover", helper.nativeAmericas.buttonSideBarMOsbbII);
-//    $("#sbbII").on("mouseleave", helper.nativeAmericas.buttonSideBarMLsbbII);
-//    $("#sbbII").on("mousedown", helper.nativeAmericas.buttonSideBarMDsbbII);
-//    
-//    //side bar button Info North America
-//    $("#sbbINA").on("mouseover", helper.nativeAmericas.buttonSideBarMOsbbINA);
-//    $("#sbbINA").on("mouseleave", helper.nativeAmericas.buttonSideBarMLsbbINA);
-//    $("#sbbINA").on("mousedown", helper.nativeAmericas.buttonSideBarMDsbbINA);
-//    
-//    //side bar button Europe 1700 - 1800 Outside of its folder
-//    $("#sbbE17-18O").on("mouseover", helper.europe17to18.buttonSideBarMOsbbE17to18O);
-//    $("#sbbE17-18O").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbE17to18O);
-//    $("#sbbE17-18O").on("mousedown", helper.europe17to18.buttonSideBarMDsbbE17to18O);
-//    
-//    //side bar button Europe 1700 - 1800 Inside of its folder
-//    $("#sbbE17-18I").on("mouseover", helper.europe17to18.buttonSideBarMOsbbE17to18I);
-//    $("#sbbE17-18I").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbE17to18I);
-//    $("#sbbE17-18I").on("mousedown", helper.europe17to18.buttonSideBarMDsbbE17to18I);
-//    
-//    //side bar button Info Rococo
-//    $("#sbbIR").on("mouseover", helper.europe17to18.buttonSideBarMOsbbIR);
-//    $("#sbbIR").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbIR);
-//    $("#sbbIR").on("mousedown", helper.europe17to18.buttonSideBarMDsbbIR);
-//    
-//    //side bar button Info Enlightenment
-//    $("#sbbIE").on("mouseover", helper.europe17to18.buttonSideBarMOsbbIE);
-//    $("#sbbIE").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbIE);
-//    $("#sbbIE").on("mousedown", helper.europe17to18.buttonSideBarMDsbbIE);
-//    
-//    //side bar button Info Enlightenment
-//    $("#sbbIN").on("mouseover", helper.europe17to18.buttonSideBarMOsbbIN);
-//    $("#sbbIN").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbIN);
-//    $("#sbbIN").on("mousedown", helper.europe17to18.buttonSideBarMDsbbIN);
-*/
+    //side bar button Home outside its folder
+    // $("#sbbHI").on("mouseover", helper.buttonSideBarMOsbbHI);
+    // $("#sbbHI").on("mouseleave", helper.buttonSideBarMLsbbHI);
+    // $("#sbbHI").on("mousedown", helper.buttonSideBarMDsbbHI);
+    
+    
+    // //side bar button Home inside its folder
+    // $("#sbbHO").on("mouseover", helper.buttonSideBarMOsbbHO);
+    // $("#sbbHO").on("mouseleave", helper.buttonSideBarMLsbbHO);
+    // $("#sbbHO").on("mousedown", helper.buttonSideBarMDsbbHO);
+    
+    // //side bar button North America
+    // $("#sbbNA").on("mouseover", helper.nativeAmericas.buttonSideBarMOsbbNA);
+    // $("#sbbNA").on("mouseleave", helper.nativeAmericas.buttonSideBarMLsbbNA);
+    // $("#sbbNA").on("mousedown", helper.nativeAmericas.buttonSideBarMDsbbNA);
+    
+    // //side bar button Info South America
+    // $("#sbbISA").on("mouseover", helper.nativeAmericas.buttonSideBarMOsbbISA);
+    // $("#sbbISA").on("mouseleave", helper.nativeAmericas.buttonSideBarMLsbbISA);
+    // $("#sbbISA").on("mousedown", helper.nativeAmericas.buttonSideBarMDsbbISA);    
+
+    // //side bar button Info Inkas
+    // $("#sbbII").on("mouseover", helper.nativeAmericas.buttonSideBarMOsbbII);
+    // $("#sbbII").on("mouseleave", helper.nativeAmericas.buttonSideBarMLsbbII);
+    // $("#sbbII").on("mousedown", helper.nativeAmericas.buttonSideBarMDsbbII);
+    
+    // //side bar button Info North America
+    // $("#sbbINA").on("mouseover", helper.nativeAmericas.buttonSideBarMOsbbINA);
+    // $("#sbbINA").on("mouseleave", helper.nativeAmericas.buttonSideBarMLsbbINA);
+    // $("#sbbINA").on("mousedown", helper.nativeAmericas.buttonSideBarMDsbbINA);
+    
+    // //side bar button Europe 1700 - 1800 Outside of its folder
+    // $("#sbbE17-18O").on("mouseover", helper.europe17to18.buttonSideBarMOsbbE17to18O);
+    // $("#sbbE17-18O").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbE17to18O);
+    // $("#sbbE17-18O").on("mousedown", helper.europe17to18.buttonSideBarMDsbbE17to18O);
+    
+    // //side bar button Europe 1700 - 1800 Inside of its folder
+    // $("#sbbE17-18I").on("mouseover", helper.europe17to18.buttonSideBarMOsbbE17to18I);
+    // $("#sbbE17-18I").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbE17to18I);
+    // $("#sbbE17-18I").on("mousedown", helper.europe17to18.buttonSideBarMDsbbE17to18I);
+    
+    // //side bar button Info Rococo
+    // $("#sbbIR").on("mouseover", helper.europe17to18.buttonSideBarMOsbbIR);
+    // $("#sbbIR").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbIR);
+    // $("#sbbIR").on("mousedown", helper.europe17to18.buttonSideBarMDsbbIR);
+    
+    // //side bar button Info Enlightenment
+    // $("#sbbIE").on("mouseover", helper.europe17to18.buttonSideBarMOsbbIE);
+    // $("#sbbIE").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbIE);
+    // $("#sbbIE").on("mousedown", helper.europe17to18.buttonSideBarMDsbbIE);
+    
+    // //side bar button Info Enlightenment
+    // $("#sbbIN").on("mouseover", helper.europe17to18.buttonSideBarMOsbbIN);
+    // $("#sbbIN").on("mouseleave", helper.europe17to18.buttonSideBarMLsbbIN);
+    // $("#sbbIN").on("mousedown", helper.europe17to18.buttonSideBarMDsbbIN);
+
     
     populateContent("textContainer");  
     
@@ -153,7 +161,7 @@ function ce (elid, cid, mcid, elm2id, tbDirection, isScrolling) {  //collapse el
     }   // if side bar is side bar
     
     if (helper.tbStuff.tbID == elid){
-        if (!helper.tbStuff.tbOpen || tbDirection == "up"){    //closed
+        if (!helper.tbStuff.tbOpen || tbDirection === "up"){    //closed
             time = "0.2s ";
             direction = "top ";
             timingFunction = "ease-out ";
@@ -164,7 +172,7 @@ function ce (elid, cid, mcid, elm2id, tbDirection, isScrolling) {  //collapse el
             
             helper.tbStuff.tbOpen = true; 
             helper.tbStuff.canMovefScroll = false;
-        } else if (helper.tbStuff.tbOpen || tbDirection == "down"){   //open
+        } else if (helper.tbStuff.tbOpen || tbDirection === "down"){   //open
             time = "0.2s ";
             direction = "top ";
             timingFunction = "ease-in ";
