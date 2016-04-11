@@ -37,7 +37,8 @@
 function onClick (){
     var el = $(this);
     
-    console.log(el)
+    console.log(el);
+    
 }
 
 $( document ).ready(function() {
@@ -131,6 +132,7 @@ function ce (elid, cid, mcid, elm2id, tbDirection, isScrolling) {  //collapse el
     var mc = document.getElementById(mcid); //main content
     var elm2 = document.getElementById(elm2id); //element to move 2
     
+
     var leftpx = c.offsetWidth;
     var toppx = c.offsetHeight;
     
