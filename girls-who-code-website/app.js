@@ -34,38 +34,21 @@
 // x.buttonOnClick()
 
 
-function changeColor (){
-    var el = $(this);
-    el.css("background-color", "skyblue");
-}
-
-function changeColorGrey (){
-    var el = $(this);
-    el.css("background-color", "transparent");
-}
-
 function clicked (){
-    console.log("clicked");
+    var el = event.srcElement;
+    el.style.backgroundColor = "skyblue";
 }
-
-var sbe;
 
 $( document ).ready(function() {
  //make sure document is ready
     console.log("ready");
     
-    sbe = document.getElementsByClassName("buttonSideBar");
+    var sbe = document.getElementsByClassName("buttonSideBar");
 
     for (var i = 1; i < sbe.length; i ++){
         var el = sbe[i];
         sbe[i].onclick = clicked;
     }
-    
-
-    $(".buttonSideBar").on("mouseover", changeColor);
-    $(".buttonSideBar").on("mousedown", changeColor);
-    $(".buttonSideBar").on("mouseleave", changeColorGrey);
-
     
     // new SBB( "#sbbHI" ).el.onmouseover = x.setBg1;    
     // $("#sbbHI").on("mouseover", helper.buttonSideBarMOsbbHI);
