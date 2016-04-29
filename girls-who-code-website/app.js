@@ -34,18 +34,25 @@
 // x.buttonOnClick()
 
 
-function onClick (){
+function changeColor (){
     var el = $(this);
-    
-    console.log(el);
-    
+    el.css("background-color", "skyblue");
 }
+
+function changeColorGrey (){
+    var el = $(this);
+    el.css("background-color", "transparent");
+}
+
 
 $( document ).ready(function() {
  //make sure document is ready
     console.log("ready");
     
-    $(".buttonSideBar").on("click", onClick);
+    $(".buttonSideBar").on("mouseover", changeColor);
+    $(".buttonSideBar").on("mousedown", changeColor);
+    $(".buttonSideBar").on("mouseleave", changeColorGrey);
+
     
     // new SBB( "#sbbHI" ).el.onmouseover = x.setBg1;    
     // $("#sbbHI").on("mouseover", helper.buttonSideBarMOsbbHI);
@@ -132,7 +139,6 @@ function ce (elid, cid, mcid, elm2id, tbDirection, isScrolling) {  //collapse el
     var mc = document.getElementById(mcid); //main content
     var elm2 = document.getElementById(elm2id); //element to move 2
     
-
     var leftpx = c.offsetWidth;
     var toppx = c.offsetHeight;
     
