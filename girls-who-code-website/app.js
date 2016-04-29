@@ -36,7 +36,12 @@
 
 function clicked (){
     var el = event.srcElement;
-    el.style.backgroundColor = "skyblue";
+    console.log(el.style)
+    
+    if (el.style.backgroundColor == "transparent") {
+        el.style.backgroundColor = "skyblue";
+
+    }
 }
 
 $( document ).ready(function() {
