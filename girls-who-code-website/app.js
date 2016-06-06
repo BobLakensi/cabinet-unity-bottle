@@ -76,10 +76,21 @@ function populateContent (elid) {
     }
 }
 
-function ce (elid, cid, mcid, elm2id, tbDirection, isScrolling) {  //collapse element
-    var el = document.getElementById(elid); //element
-    var c = document.getElementById(cid);    // container 
-    var mc = document.getElementById(mcid); //main content
+//function called from html, calls ce
+function ceManager (elID) {
+    //elements specified for collasping of side bar
+//    var el = document.getElementById(elid); //element
+//    var c = document.getElementById(cid);    // container 
+//    var mc = document.getElementById(mcid); //main content
+//    var elm2 = document.getElementById(elm2id); //element to move 2
+    
+    ce('sbbce', 'sideBarContainer', 'mainContent', null, null, false);
+}
+
+function ce (elID, cID, mcID, elm2ID, tbDirection, isScrolling) {  //collapse element
+    var el = document.getElementById(elID); //element
+    var c = document.getElementById(cID);    // container 
+    var mc = document.getElementById(elm2ID); //main content
     var elm2 = document.getElementById(elm2id); //element to move 2
     
     var leftpx = c.offsetWidth;
