@@ -1,6 +1,6 @@
 #topBarContainer {
     background-color: skyblue;
-    height: 80px;
+    height: 50px;
     padding: 0;
     position:absolute;
     position: fixed;
@@ -26,7 +26,7 @@
     position: absolute;
     position: fixed;
     left: 0; 
-    top: 80px;
+    top: 50px;
     bottom: 0;
     width: 180px;
     

@@ -52,10 +52,8 @@ $( document ).ready(function() {
     
 });
 
-var el;
-
 function populateContent (elid) {
-     el = document.getElementsByClassName(elid);
+     var el = document.getElementsByClassName(elid);
 
     for (var i = 0; i < el.length; i ++){
         el[i].innerHTML = info[i].period + "</br>" 
@@ -96,10 +94,7 @@ function collapseElement (elID, cID, mcID, elm2ID) {  //collapse element
 
             helper.sbStuff.sbOpen = false;
         } else if (!helper.sbStuff.sbOpen){
-            time = "0.2s ";
-            direction = "left ";
             timingFunction = "ease-in ";
-            delay = "0s"
             container_px = "0px"
             content_px = "180px"
 
@@ -123,6 +118,6 @@ var helper = {
             mc.style.transition = direction + time + timingFunction +  delay;
             mc.style.left = content_px;
         }
-    },  //side bar stuff
+    }  //side bar stuff
     
 }   //helper
