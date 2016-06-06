@@ -33,12 +33,8 @@
 // x= new SBBC();
 // x.buttonOnClick()
 
-
-
-
-
-$( document ).ready(function() {
-    
+//color side buttons on hover
+$( document ).ready(function() {    
     //side bar button changes color on hover
     var sbe = $(".buttonSideBar").hover(function mouseOver (){
         var el = event.target;
@@ -47,19 +43,22 @@ $( document ).ready(function() {
         var el = event.target;
         el.style.backgroundColor = "transparent";
     });    
-    
-    populateContent("textContainer");  
-    
+        
 });
 
-function populateContent (elid) {
-     var el = document.getElementsByClassName(elid);
+//add text to text boxes
+$(document).ready(function () {
+    function populateContent (elid) {
+        var el = document.getElementsByClassName(elid);
 
-    for (var i = 0; i < el.length; i ++){
-        el[i].innerHTML = info[i].period + "</br>" 
+        for (var i = 0; i < el.length; i ++){
+            el[i].innerHTML = info[i].period + "</br>" 
             + info[i].environment.text + "</br>";
-    }
-}
+        }
+    }  
+    populateContent("textContainer")
+});
+
 
 //function called from html, calls ce
 function ceManager (elID) {
