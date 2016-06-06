@@ -47,19 +47,6 @@ $( document ).ready(function() {
         var el = event.target;
         el.style.backgroundColor = "transparent";
     });    
-
-//    for (var i = 1; i < sbe.length; i ++){
-//        var el = sbe[i];
-//        sbe[i].hover(mouseOver, mouseOut);
-//    }
-    
-    // new SBB( "#sbbHI" ).el.onmouseover = x.setBg1;    
-    // $("#sbbHI").on("mouseover", helper.buttonSideBarMOsbbHI);
-    
-    // $("#sbbHI").on("mouseleave", helper.buttonSideBarMLsbbHI);
-    // new SBBC( "#sbbHI" ).prepEl();
-    // $("#sbbHI").on("mousedown", helper.buttonSideBarMDsbbHI); 
-    
     
     populateContent("textContainer");  
     
@@ -79,26 +66,26 @@ function populateContent (elid) {
 //function called from html, calls ce
 function ceManager (elID) {
     //elements specified for collasping of side bar
-//    var el = document.getElementById(elid); //element
-//    var c = document.getElementById(cid);    // container 
-//    var mc = document.getElementById(mcid); //main content
-//    var elm2 = document.getElementById(elm2id); //element to move 2
-    
-    ce('sbbce', 'sideBarContainer', 'mainContent', null, null, false);
+    var el = 'sbbce'; //element
+    var c = 'sideBarContainer';    // container 
+    var mc = 'mainContent'; //main content
+    var elm2 = null; //element to move 2
+        
+    collapseElement(el, c, mc, elm2);
 }
 
-function ce (elID, cID, mcID, elm2ID, tbDirection, isScrolling) {  //collapse element
+function collapseElement (elID, cID, mcID, elm2ID) {  //collapse element
     var el = document.getElementById(elID); //element
     var c = document.getElementById(cID);    // container 
     var mc = document.getElementById(elm2ID); //main content
-    var elm2 = document.getElementById(elm2id); //element to move 2
+    var elm2 = document.getElementById(elm2ID); //element to move 2
     
     var leftpx = c.offsetWidth;
     var toppx = c.offsetHeight;
     
     var time, direction, timingFunction, delay, container_px, content_px, e2_px;
 
-    if (helper.sbStuff.sbID == elid){        
+    if (helper.sbStuff.sbID == elID){        
         if (helper.sbStuff.sbOpen){
             time = "0.2s ";
             direction = "left ";
