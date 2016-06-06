@@ -59,7 +59,7 @@ $( document ).ready(function() {
     // $("#sbbHI").on("mouseleave", helper.buttonSideBarMLsbbHI);
     // new SBBC( "#sbbHI" ).prepEl();
     // $("#sbbHI").on("mousedown", helper.buttonSideBarMDsbbHI); 
-
+    
     
     populateContent("textContainer");  
     
@@ -110,51 +110,8 @@ function ce (elid, cid, mcid, elm2id, tbDirection, isScrolling) {  //collapse el
         
         helper.sbStuff.animate(c, mc, container_px, content_px, direction, time, timingFunction, delay);
     }   // if side bar is side bar
-    
-    if (helper.tbStuff.tbID == elid){
-        if (!helper.tbStuff.tbOpen || tbDirection === "up"){    //closed
-            time = "0.2s ";
-            direction = "top ";
-            timingFunction = "ease-out ";
-            delay = "0s";
-            container_px = "-50px";
-            content_px = "30px";
-            e2_px = "30px";
-            
-            helper.tbStuff.tbOpen = true; 
-            helper.tbStuff.canMovefScroll = false;
-        } else if (helper.tbStuff.tbOpen || tbDirection === "down"){   //open
-            time = "0.2s ";
-            direction = "top ";
-            timingFunction = "ease-in ";
-            delay = "0s";
-            container_px = "0px";
-            content_px = "80px";
-            e2_px = "80px";
-            
-            helper.tbStuff.tbOpen = false;
-            helper.tbStuff.canMovefScroll = true;
-        }   //if tob bar is open/closed
-        
-        helper.tbStuff.animate(c, mc, elm2, container_px, content_px, e2_px, direction, time, timingFunction, delay);
-    }   //if top bar
 
 }   //function ce
-
-var lastScrollTop = 0;
-//document.addEventListener("scroll", function(){ 
-//   var st = window.pageYOffset || document.documentElement.scrollTop; 
-//   if (st > lastScrollTop){
-//       console.log("down", st)
-//       ce('tbbce', 'topBarContainer', 'mainContent' , 'sideBarContainer', "down", true );
-//   } else {
-//       console.log("up", st)
-//       if (st < 1250){
-//            ce('tbbce', 'topBarContainer', 'mainContent' , 'sideBarContainer', "up", true );
-//       }
-//   }
-//   lastScrollTop = st;
-//}, false);
 
 var helper = {   
     sbStuff : { //side bar stuff
@@ -169,23 +126,5 @@ var helper = {
             mc.style.left = content_px;
         }
     },  //side bar stuff
-    
-    tbStuff: {  //top bar stuff
-        tbID: "tbbce",    //top bar button id
-        tbOpen: false,   //top bar open
-        canMovefScroll: true,    //can move from scroll
-        
-        animate: function (c, mc, elm2, container_px, content_px, e2_px, direction, time, timingFunction, delay) {
-            c.style.transition = direction + time + timingFunction +  delay;
-            c.style.top = container_px;
-
-            mc.style.transition = direction + time + timingFunction +  delay;
-            mc.style.top = content_px;
-
-            elm2.style.transition = direction + time + timingFunction +  delay;
-            elm2.style.top = e2_px;  
-     
-        } 
-    }   //top bar stuff
     
 }   //helper
