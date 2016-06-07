@@ -87,6 +87,7 @@ body, html {
 
 #topBarToggleContainer {
     vertical-align: middle;
+    margin: 5px;
 }
 
 #topBarToggle {
@@ -95,7 +96,7 @@ body, html {
     float: left;
     padding: 5px;
     margin: 7px;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 #topBarToggle .iconBar {
