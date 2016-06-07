@@ -63,7 +63,6 @@ body, html {
     transition: max-height 0.2s ease-out;
 }
 
-
 .topBarContent {
     position: absolute;
     top: 50px; 
@@ -107,6 +106,12 @@ body, html {
     padding: 5px;
     margin: 7px;
     border-radius: 3px;
+    border: 1px solid transparent;
+
+}
+
+#topBarToggle:active {
+    border: 1px solid black;
 }
 
 #topBarToggle .iconBar {
