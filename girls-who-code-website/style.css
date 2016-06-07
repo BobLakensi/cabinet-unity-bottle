@@ -54,6 +54,10 @@ body, html {
     -webkit-transition: max-height 0.2s ease-in;
     -moz-transition: max-height 0.2s ease-in;
     transition: max-height 0.2s ease-in;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
 }
 
 .navItem:not(:focus) ~ .topBarContent {
