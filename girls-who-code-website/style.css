@@ -3,7 +3,7 @@ body, html {
 }
 
 #topBarContainer {
-    background-color: skyblue;
+    background-color: lightgrey;
     height: 50px;
     padding: 0;
     position:absolute;
