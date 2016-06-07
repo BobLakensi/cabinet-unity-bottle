@@ -52,9 +52,26 @@ body, html {
     text-decoration: none;
 }
 
+.topBarContent ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
 .topBarContent a:hover {
     text-decoration: underline;
 }
+
+.topBarContentSub {
+    padding: 20px;
+}
+
+.topBarContentSub ul li a {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+
 
 
 #sideBarContainer {
