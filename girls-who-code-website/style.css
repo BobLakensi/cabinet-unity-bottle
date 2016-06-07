@@ -85,19 +85,27 @@ body, html {
     padding: 5px 0;
 }
 
+#topBarToggleContainer {
+    vertical-align: middle;
+}
+
 #topBarToggle {
-    background-color: white;
+    line-height: 40px;
+    background-color: lightgray;
     float: left;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
 }
 
 #topBarToggle .iconBar {
     display: block;
-    width: 22px;
+    width: 20px;
     height: 2px;
     border-radius: 1px;
     margin-top: 4px;
+    background-color: black;
 }
 
 
