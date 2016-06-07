@@ -16,9 +16,9 @@ body, html {
 .logo {
     float: left;    
     font-size: 2em;
-    padding-left: 10px;
-    padding-right: 30px;
+    padding: 5px 20px;
     float: left;
+    line-height: 40px;
 }
 
 #topBarContainer > ul {
@@ -28,6 +28,17 @@ body, html {
     list-style-type: none;
 }
 
+#topBarContainer > ul > li {
+    float: left;
+}
+
+.navItem {
+    display: inline-block;
+    padding: 5px 20px;
+    line-height: 40px;
+    color: black;
+    text-decoration: none;
+}
 
 #sideBarContainer {
     background-color: lightgrey;
