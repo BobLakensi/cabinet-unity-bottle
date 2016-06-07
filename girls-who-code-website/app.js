@@ -33,10 +33,10 @@
 // x= new SBBC();
 // x.buttonOnClick()
 
-//color side buttons on hover
+//color side buttons and top bar buttons on hover
 $( document ).ready(function() {    
     //side bar button changes color on hover
-    var sbe = $(".buttonSideBar").hover(function mouseOver (){
+    var sbe = $(".buttonSideBar, .navItem" ).hover(function mouseOver (){
         var el = event.target;
         el.style.backgroundColor = "skyblue";
     }, function mouseOut (){
