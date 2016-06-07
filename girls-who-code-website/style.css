@@ -17,6 +17,7 @@ body, html {
     float: left;    
     font-size: 2em;
     padding: 5px 30px;
+    padding-left: 10px;
     float: left;
     line-height: 40px;
 }
@@ -56,7 +57,7 @@ body, html {
     position: absolute;
     top: 50px; 
     overflow: hidden;
-    background-color: dimgrey;
+    background-color: lightgray;
     max-height: 0;
 }
 
@@ -84,6 +85,20 @@ body, html {
     padding: 5px 0;
 }
 
+#topBarToggle {
+    background-color: white;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+#topBarToggle .iconBar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin-top: 4px;
+}
 
 
 
