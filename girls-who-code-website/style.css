@@ -41,6 +41,10 @@ body, html {
     text-decoration: none;
 }
 
+.navItem:hover {
+    background-color: lightblue;
+}
+
 .navItem:focus {
     background-color: lightblue;
 }
@@ -87,7 +91,6 @@ body, html {
 
 #topBarToggleContainer {
     vertical-align: middle;
-    margin: 5px;
 }
 
 #topBarToggle {

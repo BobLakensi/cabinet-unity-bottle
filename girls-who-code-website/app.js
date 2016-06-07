@@ -1,42 +1,45 @@
-// function SBB(id){    //side bar button
-//     this.el = document.getElementById(id);
-//     this.defBgColor= "skyGreen"
+/* 
+function SBB(id){    //side bar button
+     this.el = document.getElementById(id);
+     this.defBgColor= "skyGreen"
 
-//     this.setBg= function(color){
-//         this.el.style.backgroundColor= color;
-//     }
-//     this.setBg1= function(){
-//         this.setBg( this.defBgColor );
-//     }
-// }
-// function SBBC(id){   //side bar button color
-//     this.constructor= SBB;
-//     this.constructor(id);
+     this.setBg= function(color){
+         this.el.style.backgroundColor= color;
+     }
+     this.setBg1= function(){
+         this.setBg( this.defBgColor );
+     }
+ }
+ function SBBC(id){   //side bar button color
+     this.constructor= SBB;
+     this.constructor(id);
     
-//     this.url= "home.html";
-//     this.prepEl= function(){
-//         this.el.onclick= this.buttonOnClick;
-//         this.el.helper= this;
-//     }
-//     this.buttonOnClick= function(){
-//         document.location= this.helper.url;
-//     }
-// }
-// function SBBCdot(id){
-//     this.constructor= SBB;
-//     this.constructor(id);
+     this.url= "home.html";
+     this.prepEl= function(){
+         this.el.onclick= this.buttonOnClick;
+         this.el.helper= this;
+     }
+     this.buttonOnClick= function(){
+         document.location= this.helper.url;
+     }
+ }
+ function SBBCdot(id){
+     this.constructor= SBB;
+     this.constructor(id);
     
-//     this.url= "../home.html";
+     this.url= "../home.html";
     
-// }
+ }
 
-// x= new SBBC();
-// x.buttonOnClick()
+ x= new SBBC();
+ x.buttonOnClick()
+ 
+ */
 
 //color side buttons and top bar buttons on hover
 $( document ).ready(function() {    
     //side bar button changes color on hover
-    var sbe = $(".buttonSideBar, .navItem, #topBarToggle" ).hover(function mouseOver (){
+    var sbe = $(".buttonSideBar, #topBarToggle" ).hover(function mouseOver (){
         var el = event.target;
         el.style.backgroundColor = "skyblue";
     }, function mouseOut (){
@@ -58,7 +61,6 @@ $(document).ready(function () {
     }  
     populateContent("textContainer")
 });
-
 
 //function called from html, calls ce
 function ceManager (elID) {
