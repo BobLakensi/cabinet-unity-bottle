@@ -39,7 +39,7 @@ function SBB(id){    //side bar button
 //color side buttons and top bar buttons on hover
 $( document ).ready(function() {    
     //side bar button changes color on hover
-    var sbe = $(".buttonSideBar, #topBarToggle" ).hover(function mouseOver (){
+    var sbe = $(".buttonSideBar, #topBarToggle, .showContent" ).hover(function mouseOver (){
         var el = event.target;
         el.style.backgroundColor = "skyblue";
     }, function mouseOut (){
@@ -60,6 +60,16 @@ $(document).ready(function () {
         }
     }  
     populateContent("textContainer")
+});
+
+
+//psuedo distinct pages
+$(document).ready(function () {
+    var content = document.getElementsByClassName("contentContainer");
+    for (var i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
+    }
+
 });
 
 //function called from html, calls ce
