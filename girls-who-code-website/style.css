@@ -1,3 +1,7 @@
+body, html {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 #topBarContainer {
     background-color: skyblue;
     height: 50px;
@@ -10,16 +14,17 @@
 }
 
 #topBarSubContainer {
-    padding: 5px;
-    margin: 5px;
+    height: 100%;
+    width: 100%;
 }
 
-.buttonTopBar {
-    height: 55px;
-    width: 8%;
-    border-radius: 10px;
-
+.logo {
+    float: left;    
+    font-size: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 
 #sideBarContainer {
     background-color: lightgrey;
@@ -110,7 +115,6 @@
     background-color: darkgray;
     border-radius: 5px;
     
-    font-family: 'Noto Sans', sans-serif;
 }
 
 .boldText {
