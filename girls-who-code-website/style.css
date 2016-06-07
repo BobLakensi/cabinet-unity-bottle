@@ -13,16 +13,19 @@ body, html {
     right: 0;
 }
 
-#topBarSubContainer {
-    height: 100%;
-    width: 100%;
-}
-
 .logo {
     float: left;    
     font-size: 2em;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 30px;
+    float: left;
+}
+
+#topBarContainer > ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style-type: none;
 }
 
 
