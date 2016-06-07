@@ -56,6 +56,13 @@ body, html {
     transition: max-height 0.2s ease-in;
 }
 
+.navItem:not(:focus) ~ .topBarContent {
+    max-height: 0px;
+    -webkit-transition: max-height 0.2s ease-out;
+    -moz-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
+}
+
 
 .topBarContent {
     position: absolute;
