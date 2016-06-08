@@ -11,6 +11,8 @@ body, html {
     top: 0;
     left: 0;
     right: 0;
+    border-bottom: 2px solid black;
+
 }
 
 #logo {
@@ -153,7 +155,8 @@ body, html {
     top: 50px;
     bottom: 0;
     width: 180px;
-    
+    border-top: 2px solid black;
+    border-right: 2px solid black;
 }
 
 #sideBarSubContainer {
