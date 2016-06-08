@@ -39,7 +39,6 @@ function SBB(id){    //side bar button
 //color side buttons and top bar buttons on hover
 $( document ).ready(function() {   
     console.log("ready")
-    
     //side bar button changes color on hover
     var sbe = $(".buttonSideBar, #topBarToggle, .showContent" ).hover(function mouseOver (){
         var el = event.target;
@@ -63,7 +62,6 @@ $(document).ready(function () {
     }  
     populateContent("textContainer")
 });
-
 
 //psuedo distinct pages
 $(document).ready(function () {
@@ -92,6 +90,11 @@ $(document).ready(function () {
     }
 });
 
+//highlight sidebar button based on users location
+$(document).ready(function () {
+    
+}); 
+
 //function called from html, calls ce
 function ceManager (elID) {
     //elements specified for collasping of side bar
@@ -106,9 +109,9 @@ function ceManager (elID) {
 function collapseElement (elID, cID, mcID, elm2ID) {  //collapse element
     var el = document.getElementById(elID); //element
     var c = document.getElementById(cID);    // container 
-    var mc = document.getElementById(elm2ID); //main content
+    var mc = document.getElementById(mcID); //main content
     var elm2 = document.getElementById(elm2ID); //element to move 2
-    
+        
     var leftpx = c.offsetWidth;
     var toppx = c.offsetHeight;
     
