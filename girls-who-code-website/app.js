@@ -64,16 +64,20 @@ $(document).ready(function () {
     populateContent("textContainer")
 });
 
+
+var toggleContent;
 //psuedo distinct pages
 $(document).ready(function () {
-    var toggleContent = document.getElementsByClassName("showContent");
+     toggleContent = document.getElementsByClassName("showContent");
     for (var i = 0; i < toggleContent.length; i ++){
         toggleContent[i].content = document.getElementById("page" + (i + 1));
+        toggleContent[i].urlString = "page" + (i + 1);
         toggleContent[i].onclick = function (button) {
             for (var n = 0; n < toggleContent.length; n++){
                 toggleContent[n].content.style.display = "none"
             }
-            button.target.content.style.display = "block"
+            parent.location.hash = button.target.urlString;
+            button.target.content.style.display = "block";
         };
     }  
 });
