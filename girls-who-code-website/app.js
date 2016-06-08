@@ -37,7 +37,9 @@ function SBB(id){    //side bar button
  */
 
 //color side buttons and top bar buttons on hover
-$( document ).ready(function() {    
+$( document ).ready(function() {   
+    console.log("ready")
+    
     //side bar button changes color on hover
     var sbe = $(".buttonSideBar, #topBarToggle, .showContent" ).hover(function mouseOver (){
         var el = event.target;
@@ -62,14 +64,18 @@ $(document).ready(function () {
     populateContent("textContainer")
 });
 
-
+var content;
 //psuedo distinct pages
 $(document).ready(function () {
-    var content = document.getElementsByClassName("contentContainer");
-    for (var i = 0; i < content.length; i++) {
-        content[i].style.display = "none";
+    content = document.getElementsByClassName("showContent");
+       
+    for (var i = 0; i < content.length; i ++){
+        content[i].onclick = function () {
+            console.log("click")   
+        };
+        content[i].content = document.getElementById("page" + (i + 1));
     }
-
+    
 });
 
 //function called from html, calls ce

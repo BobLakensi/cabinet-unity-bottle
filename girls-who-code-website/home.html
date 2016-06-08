@@ -10,7 +10,7 @@
 
     <body>
         <div id = "mainContent">
-             <div class = "imageContainer" width = "100%">
+             <div class = "contentContainer" id = "page1" width = "100%">
                 <div class = "imageSubcontainer">
                     <div class = "image">
                         <img height = "280px" width = "280px" src = "https://arthistoryoftheday.files.wordpress.com/2011/08/bernini-david1.jpg">
@@ -27,7 +27,7 @@
                 </div>
             </div>
 
-            <div class = "imageContainer" width = "100%">
+            <div class = "contentContainer" id = "page2" width = "100%">
                 <div class = "imageSubcontainer">
                     <div class = "image">
                         <img height = "280px" width = "280px" src = "https://s-media-cache-ak0.pinimg.com/236x/58/2b/da/582bdae9ea9b3b9ee90c084cd3b06a99.jpg">
@@ -44,7 +44,7 @@
                 </div>
             </div>  
             
-            <div class = "imageContainer" width = "100%">
+            <div class = "contentContainer" id = "page3" width = "100%">
                 <div class = "imageSubcontainer">
                     <div class = "image">
                         <img height = "280px" width = "280px" src = "http://www.rembrandtpainting.net/graphics/night_watch_small.jpg">
@@ -61,7 +61,7 @@
                 </div>
             </div>  
             
-            <div class = "imageContainer" width = "100%">
+            <div class = "contentContainer" id = "page4" width = "100%">
                 <div class = "imageSubcontainer">
                     <div class = "image">
                         <img height = "280px" width = "280px" src = "http://www.essentialvermeer.com/catalogue/image-paintings/art_of_painting.jpg">
@@ -76,15 +76,7 @@
                     </div>
                     </div>
                 </div>
-            </div>  
-            
-            <div class = "footerContatiner">
-                <div class = "footerSubContatiner">
-                    <p class = "footerText"> Monte C </p>
-                    
-                </div>
-            </div>
-            
+            </div>              
             
         </div>
         
@@ -100,6 +92,7 @@
             
             <div class = "logo"> Webby </div>
             <ul> 
+                
                 <li> 
                     <a href = "#" class = "navItem"> Vids 
                         <span class = "caret"> </span>
@@ -113,12 +106,27 @@
                             </ul>
                         </div>
                     </div>
-                </li>
-                <li>     
+                </li>          
+                
+                <li> 
                     <a href = "#" class = "navItem"> Pic 
                         <span class = "caret"> </span>
                     </a>
-                </li>   
+                    <div class = "topBarContent"> 
+                        <div class = "topBarContentSub"> 
+                            <ul> 
+                                <li> <a href= "#"> 1 </a></li>
+                                <li> <a href= "#"> 2 </a></li>
+                                <li> <a href= "#"> 3 </a></li>
+                                <li> <a href= "#"> 4 </a></li>
+                                <li> <a href= "#"> 5 </a></li>
+                                <li> <a href= "#"> 6 </a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
                 <li>     
                     <a href = "https://www.youtube.com/watch?v=p8J4CDKErvA" class = "navItem"> Music 
                     
@@ -131,6 +139,10 @@
             <div id = "sideBarSubContainer">
                 <div id = "sideBarButtonSubContainer"> 
                     <button height = "100%" class = "buttonSideBar" id = "sbbce" onclick = "ceManager('sbbce')" > Collapse </button>
+                    <button height = "100%" class = "showContent" id = "contnent1Button" > Show Page 1 </button>
+                    <button height = "100%" class = "showContent" > Show Page 2 </button>
+                    <button height = "100%" class = "showContent" > Show Page 3 </button>
+                    <button height = "100%" class = "showContent" > Show Page 4 </button>
                 </div>
 
             </div>
