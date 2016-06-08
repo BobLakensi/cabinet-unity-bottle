@@ -65,10 +65,9 @@ $(document).ready(function () {
 });
 
 
-var toggleContent;
 //psuedo distinct pages
 $(document).ready(function () {
-     toggleContent = document.getElementsByClassName("showContent");
+    var toggleContent = document.getElementsByClassName("showContent");
     for (var i = 0; i < toggleContent.length; i ++){
         toggleContent[i].content = document.getElementById("page" + (i + 1));
         toggleContent[i].urlString = "page" + (i + 1);
@@ -80,6 +79,18 @@ $(document).ready(function () {
             button.target.content.style.display = "block";
         };
     }  
+});
+
+//if logo clicked, show homeContent 
+$(document).ready(function () {
+    var logo = document.getElementById("logo");
+    var homeContent = document.getElementsByClassName("homeContent");
+    logo.onclick = function () {
+        console.log("clicked")
+        for (var i = 0; i < homeContent.length; i ++) {
+            homeContent[i].style.display = "block";
+        }
+    }
 });
 
 //function called from html, calls ce

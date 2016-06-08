@@ -13,7 +13,7 @@ body, html {
     right: 0;
 }
 
-.logo {
+#logo {
     float: left;    
     font-size: 2em;
     padding: 5px 30px;
