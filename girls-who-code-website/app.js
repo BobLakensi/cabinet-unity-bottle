@@ -86,7 +86,6 @@ $(document).ready(function () {
     var logo = document.getElementById("logo");
     var homeContent = document.getElementsByClassName("homeContent");
     logo.onclick = function () {
-        console.log("clicked")
         for (var i = 0; i < homeContent.length; i ++) {
             homeContent[i].style.display = "block";
         }

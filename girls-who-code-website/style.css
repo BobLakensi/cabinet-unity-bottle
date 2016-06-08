@@ -20,6 +20,8 @@ body, html {
     padding-left: 10px;
     float: left;
     line-height: 40px;
+    cursor: pointer; 
+    cursor: hand;
 }
 
 #topBarContainer > ul {
@@ -112,6 +114,8 @@ body, html {
 
 #topBarToggleContainer {
     vertical-align: middle;
+    cursor: pointer; 
+    cursor: hand;
 }
 
 #topBarToggle {
@@ -167,6 +171,8 @@ body, html {
     height: 50px;
     width: 100%;
     text-align: left;
+    cursor: pointer; 
+    cursor: hand;
 }
 
 
