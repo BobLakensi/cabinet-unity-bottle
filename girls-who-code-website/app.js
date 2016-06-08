@@ -64,18 +64,18 @@ $(document).ready(function () {
     populateContent("textContainer")
 });
 
-var content;
 //psuedo distinct pages
 $(document).ready(function () {
-    content = document.getElementsByClassName("showContent");
-       
-    for (var i = 0; i < content.length; i ++){
-        content[i].onclick = function () {
-            console.log("click")   
+    var toggleContent = document.getElementsByClassName("showContent");
+    for (var i = 0; i < toggleContent.length; i ++){
+        toggleContent[i].content = document.getElementById("page" + (i + 1));
+        toggleContent[i].onclick = function (button) {
+            for (var n = 0; n < toggleContent.length; n++){
+                toggleContent[n].content.style.display = "none"
+            }
+            button.target.content.style.display = "block"
         };
-        content[i].content = document.getElementById("page" + (i + 1));
-    }
-    
+    }  
 });
 
 //function called from html, calls ce
