@@ -96,14 +96,21 @@ $(document).ready(function () {
 //resize screen base on user's screen size
 $(document).ready(function () {
     var toggleNavButtons = document.getElementById("topBarToggleNav");
+    var navButtons = document.getElementsByClassName("navItem");
     if (window.innerWidth < 450) {
         //small screen
         ceManager('sbbce');
         toggleNavButtons.style.display = "block";
+        for (var i = 0; i < navButtons.length; i ++){
+            navButtons[i].style.display = "none";
+        }
     }
     if (window.innerWidth > 450) {
         //big screen
         toggleNavButtons.style.display = "none";
+                for (var i = 0; i < navButtons.length; i ++){
+            navButtons[i].style.display = "block";
+        }
     }
 });
 
