@@ -84,9 +84,7 @@ $(document).ready(function () {
     var logo = document.getElementById("logo");
     var homeContent = document.getElementsByClassName("homeContent");
     logo.onclick = function () {
-        for (var i = 0; i < homeContent.length; i ++) {
-            homeContent[i].style.display = "block";
-        }
+        location = "index.html"
     }
 });
 
