@@ -40,7 +40,7 @@ function SBB(id){    //side bar button
 $( document ).ready(function() {   
     console.log("ready")
     //side bar button changes color on hover
-    var sbe = $(".buttonSideBar, #topBarToggle, .showContent" ).hover(function mouseOver (){
+    var sbe = $(".buttonSideBar, #topBarToggle, .showContent, #topBarToggleMenu" ).hover(function mouseOver (){
         var el = event.target;
         el.style.backgroundColor = "skyblue";
     }, function mouseOut (){
@@ -95,11 +95,15 @@ $(document).ready(function () {
 
 //resize screen base on user's screen size
 $(document).ready(function () {
+    var toggleNavButtons = document.getElementById("topBarToggleNav");
     if (window.innerWidth < 450) {
+        //small screen
         ceManager('sbbce');
+        toggleNavButtons.style.display = "block";
     }
     if (window.innerWidth > 450) {
-        
+        //big screen
+        toggleNavButtons.style.display = "none";
     }
 });
 
