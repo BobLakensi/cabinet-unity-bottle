@@ -95,6 +95,17 @@ $(document).ready(function () {
     
 }); 
 
+//resize screen base on user's screen size
+$(document).ready(function () {
+    if (window.innerWidth < 450) {
+        ceManager('sbbce');
+    }
+    if (window.innerWidth > 450) {
+        
+    }
+});
+
+
 //function called from html, calls ce
 function ceManager (elID) {
     //elements specified for collasping of side bar
